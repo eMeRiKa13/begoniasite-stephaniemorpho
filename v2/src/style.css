@@ -14,13 +14,13 @@
 }
 
 @layer components {
-  .btn-premium-secondary {
+  .btn-premium-pink {
     @apply inline-flex items-center justify-center rounded-full text-white font-medium transition-all duration-300;
     background: linear-gradient(135deg, #F2849E 0%, #E06C88 100%);
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4), 
                 0 8px 20px -5px rgba(242, 132, 158, 0.6);
   }
-  .btn-premium-secondary:hover {
+  .btn-premium-pink:hover {
     transform: translateY(-2px);
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 
                 0 12px 24px -5px rgba(242, 132, 158, 0.7),
@@ -28,14 +28,14 @@
     background: linear-gradient(135deg, #fab9c8 0%, #eb7e97 100%);
   }
 
-  .btn-premium-primary {
+  .btn-premium-blue {
     @apply inline-flex items-center justify-center rounded-full text-text font-semibold transition-all duration-300;
     background: linear-gradient(135deg, #FFFFFF 0%, #EBF5FB 100%);
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8),
                 0 8px 20px -5px rgba(200, 220, 240, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.6);
   }
-  .btn-premium-primary:hover {
+  .btn-premium-blue:hover {
     transform: translateY(-2px);
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 1),
                 0 12px 24px -5px rgba(180, 210, 240, 0.7);
