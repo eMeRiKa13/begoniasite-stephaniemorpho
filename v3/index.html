@@ -20,28 +20,53 @@
             </a>
             
             <!-- Desktop Nav -->
-            <div class="hidden md:flex items-center gap-10">
-                <a href="#expertise" class="text-xs font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Expertise</a>
-                <a href="#bio" class="text-xs font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Qui suis-je</a>
-                <a href="#contact" class="bg-brand-cyan text-white px-8 py-3 rounded-full text-xs font-medium uppercase tracking-[0.2em] hover:bg-brand-cyan/90 transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20">Contact</a>
+            <div class="hidden md:flex items-center gap-7 lg:gap-10">
+                <a href="#approche" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Approche</a>
+                <a href="#services" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#bio" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Parcours</a>
+                <a href="#benefices" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Bénéfices</a>
+                <a href="#lieu" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Lieu</a>
+                <a href="#contact" class="bg-brand-cyan text-white px-6 lg:px-8 py-3 rounded-full text-sm font-medium uppercase tracking-[0.2em] hover:bg-brand-cyan/90 transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20">Contact</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <button class="md:hidden text-brand-gray p-2" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <button id="mobile-menu-button" class="md:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center translate-x-full transition-transform duration-500 ease-in-out md:hidden">
+            <button id="close-menu-button" class="absolute top-6 right-6 p-4 text-brand-gray hover:text-brand-coral transition-all hover:rotate-90">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="flex flex-col items-center gap-10 text-center">
+                <a href="#approche" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Approche</a>
+                <a href="#services" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#bio" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Parcours</a>
+                <a href="#benefices" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Bénéfices</a>
+                <a href="#lieu" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Lieu</a>
+                <a href="#contact" class="mobile-nav-link bg-brand-cyan text-white px-12 py-5 rounded-full text-lg font-medium uppercase tracking-[0.2em] shadow-2xl shadow-brand-cyan/20">Contact</a>
+            </div>
+            
+            <div class="absolute bottom-12 flex gap-8">
+                <div class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40">In</div>
+                <div class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40">Ig</div>
+            </div>
         </div>
     </nav>
 
     <!-- Section 1: Hero Section -->
     <header class="relative min-h-[85vh] flex items-center pt-24 overflow-hidden bg-brand-cyan/5">
-        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-16 relative z-10">
+        <div class="container mx-auto px-4 py-8 md:px-8 md:py-24 flex flex-col md:flex-row items-center gap-24 relative z-10">
             <!-- Left: Styled Photo -->
             <div class="w-full md:w-5/12 reveal">
                 <div class="relative group">
-                    <div class="absolute -inset-4 bg-brand-coral/10 rounded-[4rem] rotate-6 group-hover:rotate-3 transition-transform duration-700"></div>
+                    <div class="absolute -inset-4 bg-brand-coral/10 rounded-[4rem] rotate-5 group-hover:rotate-3 transition-transform duration-700"></div>
                     <div class="relative aspect-[4/5] md:aspect-auto md:h-[32rem] lg:h-[38rem] rotate-2 group-hover:rotate-0 transition-transform duration-700 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white">
                         <img src="./public/images/stephanie_small.jpg" alt="Stéphanie Camus" class="w-full h-full object-cover">
                     </div>
@@ -50,27 +75,24 @@
 
             <!-- Right: Content -->
             <div class="w-full md:w-7/12 text-center md:text-left space-y-8 reveal">
-                <div class="space-y-4">
-                    <h1 class="text-5xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray">
+                <div class="space-y-4 flex flex-col">
+                    <h1 class="order-3 mt-3 text-xl lg:text-2xl font-light leading-snug text-brand-gray/80">Analyste Morpho-Coiffure & Coach en Image.</h1>
+                    <p class="order-1 text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-gray/50">Stéphanie CAMUS</p>
+                    <p class="order-2 text-5xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray">
                         Révélez Votre <br>
-                        <span class="text-brand-cyan">Beauté Authentique</span><span class="text-brand-coral ml-2 animate-float inline-block">✨</span>
-                    </h1>
-                    <p class="text-lg lg:text-xl font-light tracking-[0.3em] uppercase text-brand-gray/50">Stéphanie CAMUS</p>
-                </div>
-                
-                <div class="space-y-6">
-                    <p class="text-xl lg:text-2xl font-light leading-snug text-brand-gray/80">Analyste Morpho-Coiffure & Révélatrice de Beauté par l'image, Coach en Image.</p>
-                    <p class="text-lg leading-relaxed text-brand-gray/60 max-w-2xl">
+                        <span class="text-brand-cyan">Beauté Authentique</span>
+                    </p>
+                    <p class="order-4 text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light max-w-2xl">
                         J'accompagne les femmes de 40 ans et plus à mieux se connaître, à se reconnecter à qui elles sont profondément, à se révéler pleinement, en utilisant la beauté comme un véritable levier de transformation intérieure.
                     </p>
-                    <div class="flex items-center gap-3 text-brand-gray/40 font-medium">
-                        <span class="w-8 h-px bg-brand-coral/40"></span>
-                        <p class="italic text-sm">Paris, Île-de-France & Visio</p>
+                    <div class="order-5 flex items-center gap-3 text-brand-coral font-medium">
+                        <span class="w-8 h-px bg-brand-coral"></span>
+                        <p class="italic text-base lg:text-lg">Paris, Île-de-France & Visio</p>
                     </div>
                 </div>
 
                 <div class="pt-6">
-                    <a href="#contact" class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:gap-6 shadow-xl shadow-brand-cyan/20 text-sm uppercase tracking-widest">
+                    <a href="#contact" class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:gap-6 shadow-xl shadow-brand-cyan/20 text-base uppercase tracking-widest">
                         Commencer ma transformation
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
@@ -82,54 +104,50 @@
     </header>
 
     <!-- Section 2: Le Constat -->
-    <section class="py-32 bg-white relative">
+    <section id="approche" class="py-32 bg-white relative">
         <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
-            <h2 class="text-3xl lg:text-4xl font-medium tracking-tight reveal">
+            <h2 class="text-3xl md:text-5xl font-medium tracking-tight">
                 Un nouveau chapitre s'ouvre :<br>
-                <span class="text-brand-coral font-light italic mt-4 block">Reconnectez à Vous-Même ✨</span>
+                <span class="text-brand-coral font-light italic mt-4 block">Reconnectez à Vous-Même</span>
             </h2>
             
             <div class="space-y-8 text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">
                 <p>
                     Après 40 ans, la maturité s'installe et une quête de sens émerge souvent. Entre vos rôles de mère, de femme et de professionnelle, il est parfois difficile de savoir où l'on se situe.
                 </p>
-                <div class="h-px bg-brand-coral/10 w-24 mx-auto"></div>
                 <p>
                     C'est le moment idéal pour revenir à soi. Il ne s'agit pas de changer qui vous êtes, mais de réapprendre à vous choisir et de créer une <span class="text-brand-cyan font-medium">harmonie profonde</span> entre votre être et votre paraître.
                 </p>
-                <div class="bg-brand-bg-light p-10 lg:p-14 rounded-[4rem] border border-brand-coral/5 shadow-inner relative overflow-hidden">
+                <div class="bg-brand-bg-light p-10 rounded-[4rem] border border-brand-coral/5 shadow-inner relative overflow-hidden">
                     <p class="font-medium text-xl lg:text-2xl text-brand-gray relative z-10 leading-relaxed">
                         "Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur, vous le méritez, et ainsi avoir un impact positif aussi sur votre entourage."
                     </p>
                 </div>
                 <p class="text-2xl lg:text-3xl font-light text-brand-cyan pt-4">
-                    Tout changement commence par <span class="text-brand-coral underline decoration-from-font underline-offset-8">Soi-Même</span>.
+                    Tout changement commence par <span class="text-brand-coral decoration-from-font underline-offset-8">Soi-Même.</span>
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Section 3: Expertise & Services -->
-    <section id="expertise" class="py-32 bg-brand-cyan/[0.02]">
+    <section id="services" class="py-32 bg-brand-cyan/[0.02]">
         <div class="container mx-auto px-4 max-w-6xl space-y-20">
             <div class="text-center space-y-6 reveal">
-                <span class="text-xs font-medium uppercase tracking-[0.4em] text-brand-cyan">La Solution</span>
-                <h2 class="text-3xl md:text-5xl font-medium tracking-tight">Une double expertise <br>pour une mise en beauté sur-mesure <span class="text-brand-coral">✨</span></h2>
-                <p class="text-lg text-brand-gray/50 max-w-2xl mx-auto font-light leading-relaxed">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires :</p>
+                <span class="text-base font-medium uppercase tracking-wider text-brand-coral">Mes services</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tight">Une double expertise <br>pour une mise en beauté sur-mesure</h2>
+                <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light max-w-2xl mx-auto">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires :</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
                 <!-- Service A: Morpho-Coiffure -->
                 <div class="bg-white p-10 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-cyan/5 hover:shadow-brand-cyan/10 transition-all border border-brand-gray/5 group reveal">
-                    <div class="space-y-8">
-                        <div class="w-12 h-12 bg-brand-cyan/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <span class="text-lg text-brand-cyan font-medium">A</span>
-                        </div>
-                        <div class="space-y-4">
+                    <div class="space-y-6">
+                        <div class="space-y-2">
                             <h3 class="text-2xl font-medium tracking-tight">L'analyse morpho-coiffure</h3>
-                            <p class="text-lg font-light text-brand-coral italic tracking-wide">Plus qu'une coupe, une Révélation ✨</p>
+                            <p class="text-lg font-light text-brand-coral tracking-wide">Plus qu'une coupe, une Révélation 💇‍♀️</p>
                         </div>
-                        <p class="text-base leading-relaxed text-brand-gray/60 font-light">
+                        <p class="text-base lg:text-lg leading-relaxed text-brand-gray/70 font-light">
                             En tant que professionnelle spécialisée, j'étudie la morphologie de votre visage et la nature de vos cheveux en lien avec votre personnalité.
                         </p>
                         <div class="space-y-6 pt-6 font-light">
@@ -151,15 +169,12 @@
 
                 <!-- Service B: Coaching Image -->
                 <div class="bg-white p-10 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-coral/5 hover:shadow-brand-coral/10 transition-all border border-brand-gray/5 group reveal">
-                    <div class="space-y-8">
-                        <div class="w-12 h-12 bg-brand-coral/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <span class="text-lg text-brand-coral font-medium">B</span>
-                        </div>
-                        <div class="space-y-4">
+                    <div class="space-y-6">                
+                        <div class="space-y-2">
                             <h3 class="text-2xl font-medium tracking-tight">Coaching Image</h3>
-                            <p class="text-lg font-light text-brand-cyan italic tracking-wide">Faites Rayonner Votre Beauté Naturelle ✨</p>
+                            <p class="text-lg font-light text-brand-cyan tracking-wide">Faites Rayonner Votre Beauté Naturelle 🎨</p>
                         </div>
-                        <p class="text-base leading-relaxed text-brand-gray/60 font-light">
+                        <p class="text-base lg:text-lg leading-relaxed text-brand-gray/70 font-light">
                             Coaching personnalisé, sur-mesure pour faire des choix en conscience, "en partant de Soi".
                         </p>
                         <div class="space-y-6 pt-6 font-light">
@@ -193,12 +208,12 @@
                         <div class="bg-white p-12 lg:p-16 rounded-[4rem] shadow-2xl border border-brand-gray/5 space-y-8 text-center relative z-10">
                             <div class="space-y-2">
                                 <p class="text-5xl font-medium text-brand-cyan tracking-tighter">35<span class="text-xl font-light ml-1">ans</span></p>
-                                <p class="text-[0.6rem] font-medium uppercase tracking-[0.4em] text-brand-gray/30">De Passion</p>
+                                <p class="text-sm font-medium uppercase tracking-wider text-brand-gray/30">De Passion</p>
                             </div>
                             <div class="h-px bg-brand-gray/5 w-12 mx-auto"></div>
                             <div class="space-y-2">
                                 <p class="text-5xl font-medium text-brand-coral tracking-tighter">26<span class="text-xl font-light ml-1">ans</span></p>
-                                <p class="text-[0.6rem] font-medium uppercase tracking-[0.4em] text-brand-gray/30">En Salon</p>
+                                <p class="text-sm font-medium uppercase tracking-wider text-brand-gray/30">En Salon</p>
                             </div>
                         </div>
                     </div>
@@ -207,11 +222,11 @@
                 <!-- Bio Content -->
                 <div class="w-full md:w-7/12 space-y-10 reveal">
                     <div class="space-y-4">
-                        <span class="text-xs font-medium uppercase tracking-[0.4em] text-brand-coral">Mon Parcours</span>
-                        <h2 class="text-3xl lg:text-4xl font-medium tracking-tight leading-tight text-brand-gray">Stéphanie CAMUS : <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></h2>
+                        <span class="text-base font-medium uppercase tracking-wider text-brand-coral">Mon Parcours</span>
+                        <h2 class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray">Stéphanie CAMUS : <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></h2>
                     </div>
                     
-                    <div class="space-y-6 text-lg leading-relaxed text-brand-gray/60 font-light">
+                    <div class="space-y-6 text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">
                         <p>
                             Passionnée par l'univers de la beauté depuis plus de 35 ans, j'ai consacré 26 années à accompagner les femmes en salon de coiffure.
                         </p>
@@ -231,57 +246,57 @@
     </section>
 
     <!-- Section 5: Bénéfices -->
-    <section class="py-32 bg-brand-coral/[0.02]">
+    <section id="benefices" class="py-32 bg-brand-coral/[0.02]">
         <div class="container mx-auto px-4 max-w-5xl space-y-20">
             <div class="text-center space-y-6 reveal">
-                <h2 class="text-3xl lg:text-5xl font-medium tracking-tight">Ce que cet accompagnement <br>va changer pour vous <span class="text-brand-coral">✨</span></h2>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tight">Ce que cet accompagnement <br>va changer pour vous</h2>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
                 <!-- Benefit Items -->
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">🎨</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Valoriser votre image avec <span class="text-brand-cyan font-medium">authenticité</span>.</p>
+                    <span class="text-3xl block mb-4">🎨</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Valoriser votre image avec <span class="text-brand-cyan font-medium">authenticité</span>.</p>
                 </div>
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">💖</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Booster votre confiance et l'amour de <span class="text-brand-coral font-medium">vous-même</span>.</p>
+                    <span class="text-3xl block mb-4">💖</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Booster votre confiance et l'amour de <span class="text-brand-coral font-medium">vous-même</span>.</p>
                 </div>
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">🧠</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Une <span class="text-brand-cyan font-medium">meilleure connaissance</span> de qui vous êtes.</p>
+                    <span class="text-3xl block mb-4">🧠</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Une <span class="text-brand-cyan font-medium">meilleure connaissance</span> de qui vous êtes.</p>
                 </div>
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">⚡</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Renforcer votre <span class="text-brand-coral font-medium">présence</span> et votre impact.</p>
+                    <span class="text-3xl block mb-4">⚡</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Renforcer votre <span class="text-brand-coral font-medium">présence</span> et votre impact.</p>
                 </div>
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">🧘</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Créer une <span class="text-brand-cyan font-medium">harmonie</span> visuelle et intérieure.</p>
+                    <span class="text-3xl block mb-4">🧘</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Créer une <span class="text-brand-cyan font-medium">harmonie</span> visuelle et intérieure.</p>
                 </div>
                 <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-2xl block mb-6">🛍️</span>
-                    <p class="text-base font-medium text-brand-gray/80 leading-snug">Faire des <span class="text-brand-coral font-medium">choix conscients</span> dans vos achats beauté.</p>
+                    <span class="text-3xl block mb-4">🛍️</span>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Faire des <span class="text-brand-coral font-medium">choix conscients</span> dans vos achats beauté.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 6: Lieu -->
-    <section class="py-32 bg-white text-center">
+    <section id="lieu" class="py-32 bg-white text-center">
         <div class="container mx-auto px-4 max-w-4xl space-y-16">
-            <h2 class="text-3xl lg:text-4xl font-medium tracking-tight reveal">Où me retrouver ? ✨</h2>
+            <h2 class="text-3xl md:text-5xl font-medium tracking-tight">Où me retrouver ?</h2>
             
             <div class="flex flex-col md:flex-row gap-8 reveal">
                 <div class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-cyan/5 group hover:bg-white hover:shadow-2xl transition-all duration-500">
                     <div class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block">🎥</div>
-                    <h3 class="text-xs font-medium uppercase tracking-[0.3em] mb-4 text-brand-cyan">Chez soi, en visio</h3>
-                    <p class="text-brand-gray/50 text-sm italic">Un accompagnement flexible, <br>partout dans le monde.</p>
+                    <h3 class="text-lg lg:text-xl  font-medium uppercase tracking-wider mb-4 text-brand-cyan">Chez soi, en visio</h3>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Un accompagnement flexible, <br>partout dans le monde.</p>
                 </div>
                 <div class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-coral/5 group hover:bg-white hover:shadow-2xl transition-all duration-500">
                     <div class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block">📍</div>
-                    <h3 class="text-xs font-medium uppercase tracking-[0.3em] mb-4 text-brand-coral">En présentiel</h3>
-                    <p class="text-brand-gray/50 text-sm italic">Paris & Île-de-France <br>(Frais de déplacement à prévoir).</p>
+                    <h3 class="text-lg lg:text-xl  font-medium uppercase tracking-wider mb-4 text-brand-coral">En présentiel</h3>
+                    <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light">Paris & Île-de-France <br>(Frais de déplacement à prévoir).</p>
                 </div>
             </div>
         </div>
@@ -292,18 +307,18 @@
         <div class="container mx-auto px-4 max-w-5xl text-center space-y-16">
             <div class="space-y-8 reveal">
                 <div class="space-y-4">
-                    <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-brand-gray leading-tight">Prête à Révéler <br>Votre Potentiel ?</h2>
-                    <p class="text-xl lg:text-2xl text-brand-coral font-light italic">C'est le moment de vous choisir ✨</p>
+                    <h2 class="text-3xl md:text-5xl font-medium tracking-tight">Prête à révéler votre potentiel ?</h2>
+                    <p class="text-xl lg:text-2xl text-brand-coral font-light italic">C'est le moment de vous choisir 💖</p>
                 </div>
                 
-                <p class="text-lg text-brand-gray/50 leading-relaxed max-w-2xl mx-auto font-light">
+                <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 reveal font-light max-w-2xl mx-auto">
                     Ne laissez plus votre image au hasard. Échangeons ensemble de vos besoins, attentes, objectifs lors d'un moment privilégié.
                 </p>
 
                 <div class="pt-8">
                     <a href="#" class="inline-flex flex-col gap-2 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-7 px-10 rounded-[2.5rem] transition-all hover:scale-105 shadow-2xl shadow-brand-cyan/20 group">
                         <span class="text-lg lg:text-xl">Réservez votre appel découverte offert</span>
-                        <span class="text-[0.6rem] uppercase tracking-[0.4em] text-white/70 group-hover:text-white transition-colors">Prendre Rendez-Vous (45 min)</span>
+                        <span class="text-sm uppercase tracking-wider text-white/70 group-hover:text-white transition-colors">Prendre Rendez-Vous (45 min)</span>
                     </a>
                 </div>
             </div>
@@ -311,17 +326,16 @@
             <div class="pt-24 border-t border-brand-gray/5 flex flex-col md:flex-row justify-between items-center gap-10 reveal text-brand-gray/30">
                 <div class="text-left space-y-1">
                     <p class="font-medium text-brand-gray/50">Stéphanie CAMUS</p>
-                    <p class="text-[0.6rem] font-light">© 2024. Tous droits réservés.</p>
+                    <p class="text-sm font-light">Tous droits réservés.</p>
                 </div>
                 
-                <div class="flex gap-10 text-[0.6rem] font-medium uppercase tracking-[0.3em]">
+                <div class="flex gap-10 text-sm font-medium uppercase tracking-wider">
                     <a href="#" class="hover:text-brand-cyan transition-colors">Mentions Légales</a>
-                    <a href="#" class="hover:text-brand-cyan transition-colors">CGV</a>
                 </div>
                 
                 <div class="flex gap-4">
-                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-xs">In</div>
-                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-xs">Ig</div>
+                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm">In</div>
+                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm">Ig</div>
                 </div>
             </div>
         </div>
