@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphanie Camus - Morpho-Coiffure & Révélatrice de Beauté (v3)</title>
-    <meta name="description" content="Stéphanie Camus - Morpho-Coiffure et Conseil en Image à domicile.">
+    <title>Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus</title>
+    <meta name="description" content="Révélez votre beauté authentique avec Stéphanie Camus. Experte en Morpho-Coiffure et Conseil en Image à Paris, en Île-de-France et en visio. Accompagnement sur-mesure pour femmes.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus">
+    <meta property="og:description" content="Révélez votre beauté authentique. Accompagnement sur-mesure en Morpho-Coiffure et Image pour les femmes de 40 ans et plus.">
+    <meta property="og:image" content="./public/images/stephanie_small.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Stéphanie Camus",
+      "image": "./public/images/stephanie_small.jpg",
+      "description": "Analyste Morpho-Coiffure et Coach en Image. Accompagnement sur Paris, Île-de-France et en Visio.",
+      "url": "https://stephanie-camus.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Paris"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Île-de-France"
+        },
+        {
+          "@type": "Place",
+          "name": "En Visio (Monde entier)"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Conseil en Image",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Analyse Morpho-Coiffure"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Coaching Image"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="bg-white text-brand-gray font-sans selection:bg-brand-cyan selection:text-white overflow-x-hidden">
@@ -21,7 +80,6 @@
             
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-7 lg:gap-10">
-                <a href="#approche" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Approche</a>
                 <a href="#services" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Services</a>
                 <a href="#bio" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Parcours</a>
                 <a href="#benefices" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Bénéfices</a>
@@ -45,7 +103,6 @@
                 </svg>
             </button>
             <div class="flex flex-col items-center gap-10 text-center">
-                <a href="#approche" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Approche</a>
                 <a href="#services" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Services</a>
                 <a href="#bio" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Parcours</a>
                 <a href="#benefices" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Bénéfices</a>
@@ -68,7 +125,7 @@
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-brand-coral/10 rounded-[4rem] transition-transform duration-700"></div>
                     <div class="relative aspect-[4/5] md:aspect-auto md:h-[32rem] lg:h-[38rem] transition-transform duration-700 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white">
-                        <img src="./public/images/stephanie_small.jpg" alt="Stéphanie Camus" class="w-full h-full object-cover">
+                        <img src="./public/images/stephanie_small.jpg" alt="Stéphanie Camus - Coach en Image et Analyste Morpho-Coiffure à Paris" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -106,21 +163,21 @@
     <!-- Section 2: Le Constat -->
     <section id="approche" class="py-32 bg-white relative">
         <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
-            <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+            <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
                 Un nouveau chapitre s'ouvre :<br>
-                <span class="text-brand-coral font-light italic mt-4 block">Reconnectez à Vous-Même</span>
-            </h2>
+                <span class="text-brand-coral font-light italic mt-4 block">Valorisez votre Image et votre Confiance</span>
+            </p>
             
             <div class="space-y-8 text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light">
                 <p>
-                    Après 40 ans, la maturité s'installe et une quête de sens émerge souvent. Entre vos rôles de mère, de femme et de professionnelle, il est parfois difficile de savoir où l'on se situe.
+                    Après 40 ans, la maturité s'installe et les priorités changent. Entre vos rôles de mère et de femme active, le <span class="text-brand-cyan font-medium">conseil en image</span> devient un levier puissant pour réaligner celle que vous êtes devenue avec celle que vous montrez au monde.
                 </p>
                 <p>
-                    C'est le moment idéal pour revenir à soi. Il ne s'agit pas de changer qui vous êtes, mais de réapprendre à vous choisir et de créer une <span class="text-brand-cyan font-medium">harmonie profonde</span> entre votre être et votre paraître.
+                    C'est le moment idéal pour investir en vous. Il ne s'agit pas de vous transformer, mais de vous révéler. Grâce à la <span class="text-brand-coral font-medium">morpho-coiffure</span> et à l'étude de votre <span class="text-brand-cyan font-medium">style personnel</span>, nous créerons une harmonie visuelle qui renforce votre estime de soi au quotidien.
                 </p>
                 <div class="bg-brand-bg-light p-10 rounded-[4rem] border border-brand-coral/5 shadow-inner relative overflow-hidden">
                     <p class="font-medium text-xl lg:text-2xl text-brand-gray relative z-10 leading-relaxed">
-                        "Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur, vous le méritez, et ainsi avoir un impact positif aussi sur votre entourage."
+                        "Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur. Une image valorisante n'est pas superficielle, c'est le socle de votre bien-être."
                     </p>
                 </div>
                 <p class="text-2xl lg:text-3xl font-light text-brand-cyan pt-4">
@@ -134,8 +191,8 @@
     <section id="services" class="py-32 bg-brand-bg-light">
         <div class="container mx-auto px-4 max-w-6xl space-y-20">
             <div class="text-center space-y-6">
-                <span class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mes services</span>
-                <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Une double expertise <br>pour une mise en beauté sur-mesure</h2>
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mes services</h2>
+                <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Une double expertise <br>pour une mise en beauté sur-mesure</p>
                 <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl mx-auto">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires :</p>
             </div>
 
@@ -222,8 +279,8 @@
                 <!-- Bio Content -->
                 <div class="w-full md:w-7/12 space-y-10 reveal">
                     <div class="space-y-4">
-                        <span class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mon Parcours</span>
-                        <h2 class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray reveal">Stéphanie CAMUS : <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></h2>
+                        <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mon Parcours</h2>
+                        <p class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray reveal">Stéphanie CAMUS : <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></p>
                     </div>
                     
                     <div class="space-y-6 text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light">
@@ -249,9 +306,9 @@
     <section id="benefices" class="py-32 bg-brand-cyan/5">
         <div class="container mx-auto px-4 max-w-5xl space-y-20">
             <div class="text-center space-y-6">
-                <span class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan">Les bénéfices</span>
-                <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Ce que cet accompagnement <br>va changer pour vous</h2>
-            <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl mx-auto">Grâce à une approche sur-mesure, je vous aide à :</p>
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan">Les bénéfices</h2>
+                <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Ce que cet accompagnement <br>va changer pour vous</p>
+                <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl mx-auto">Grâce à une approche sur-mesure, je vous aide à :</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -309,7 +366,8 @@
         <div class="container mx-auto px-4 max-w-5xl text-center space-y-16">
             <div class="space-y-8">
                 <div class="space-y-4">
-                    <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Prête à révéler votre potentiel ?</h2>
+                    <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Contact</h2>
+                    <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Prête à révéler votre potentiel ?</p>
                     <p class="text-xl lg:text-2xl text-brand-coral font-light italic">C'est le moment de vous choisir 💖</p>
                 </div>
                 
