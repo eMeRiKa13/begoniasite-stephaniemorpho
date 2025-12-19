@@ -3,15 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphanie Camus - Morpho-Coiffure & Conseil en Image (v3)</title>
+    <title>Stéphanie Camus - Morpho-Coiffure & Révélatrice de Beauté (v3)</title>
     <meta name="description" content="Stéphanie Camus - Morpho-Coiffure et Conseil en Image à domicile.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="bg-white text-gray-900 min-h-screen flex items-center justify-center">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Stéphanie Camus - v3</h1>
-        <p class="text-lg text-gray-600">Prêt pour un nouveau design !</p>
-    </div>
+<body class="bg-white text-brand-gray font-sans selection:bg-brand-cyan selection:text-white">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-gray/5">
+        <div class="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl md:text-2xl font-bold tracking-tight text-brand-gray">
+                Stéphanie <span class="text-brand-cyan">CAMUS</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#expertise" class="text-sm font-bold uppercase tracking-widest hover:text-brand-cyan transition-colors">Expertise</a>
+                <a href="#bio" class="text-sm font-bold uppercase tracking-widest hover:text-brand-cyan transition-colors">Qui suis-je</a>
+                <a href="#contact" class="bg-brand-cyan text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-brand-cyan/90 transition-all">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle (simplified for now) -->
+            <button class="md:hidden text-brand-gray" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero Section -->
+    <header class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-12 pt-20 pb-12">
+            <!-- Left: Styled Photo (v1 style) -->
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                <div class="relative w-80 h-[30rem] md:w-[28rem] md:h-[35rem] lg:w-[32rem] lg:h-[40rem] rotate-2 hover:rotate-0 transition-transform duration-500 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+                    <img src="./public/images/stephanie_small.jpg" alt="Stéphanie Camus" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Révélez Votre Beauté Authentique<span class="text-brand-coral">✨</span>
+                </h1>
+                
+                <div class="space-y-4">
+                    <p class="text-2xl font-bold text-brand-cyan">Stéphanie CAMUS</p>
+                    <p class="text-xl font-bold">Analyste Morpho-Coiffure & Révélatrice de Beauté par l'image, Coach en Image.</p>
+                    <p class="text-lg leading-relaxed text-brand-gray/80">
+                        J'accompagne les femmes de 40 ans et plus à mieux se connaître, à se reconnecter à qui elles sont profondément, à se révéler pleinement, en utilisant la beauté comme un véritable levier de transformation intérieure.
+                    </p>
+                    <p class="text-md italic text-brand-gray/60">
+                        Depuis chez vous en visio, ou en présentiel sur Paris et l’île de France.
+                    </p>
+                </div>
+
+                <div class="pt-4">
+                    <a href="#contact" class="inline-block bg-brand-cyan hover:bg-brand-cyan/90 text-white font-bold py-4 px-8 rounded-full transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20">
+                        Commencer ma transformation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Le Constat -->
+    <section class="py-20 bg-brand-coral/5">
+        <div class="container mx-auto px-4 max-w-4xl text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-bold">
+                Un nouveau chapitre s'ouvre :<br>
+                <span class="text-brand-cyan leading-loose">Reconnectez à Vous-Même ✨</span>
+            </h2>
+            
+            <div class="space-y-6 text-lg md:text-xl leading-relaxed text-brand-gray/90">
+                <p>
+                    Après 40 ans, la maturité s'installe et une quête de sens émerge souvent. Entre vos rôles de mère, de femme et de professionnelle, il est parfois difficile de savoir où l'on se situe.
+                </p>
+                <p>
+                    C'est le moment idéal pour revenir à soi. Il ne s'agit pas de changer qui vous êtes, mais de réapprendre à vous choisir et de créer une harmonie profonde entre votre être et votre paraître. Un espace temps pour vous.
+                </p>
+                <p class="font-bold">
+                    Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur, vous le méritez, et ainsi avoir un impact positif aussi sur votre entourage.
+                </p>
+                <p class="text-2xl font-bold text-brand-coral pt-4">
+                    Tout changement commence par Soi-Même.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Expertise & Services -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl md:text-5xl font-bold">Une double expertise pour une mise en beauté sur-mesure <span class="text-brand-coral">✨</span></h2>
+                <p class="text-xl text-brand-gray/80 max-w-3xl mx-auto">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires :</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Service A: Morpho-Coiffure -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border border-brand-gray/10 shadow-xl shadow-brand-gray/5 hover:border-brand-cyan/30 transition-all group">
+                    <div class="space-y-6">
+                        <div class="inline-block px-4 py-1 bg-brand-cyan/10 text-brand-cyan font-bold rounded-full text-sm">Service A</div>
+                        <h3 class="text-2xl md:text-3xl font-bold">L'analyse morpho-coiffure</h3>
+                        <p class="text-xl font-bold text-brand-coral">Plus qu'une coupe, une Révélation ✨</p>
+                        <p class="text-lg leading-relaxed text-brand-gray/80">
+                            En tant que professionnelle spécialisée, j'étudie la morphologie de votre visage et la nature de vos cheveux en lien avec votre personnalité.
+                        </p>
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-start gap-3">
+                                <span class="text-brand-cyan text-xl">▶</span>
+                                <p class="text-md leading-relaxed"><strong class="text-brand-gray">L'objectif :</strong> Trouver la coupe, la coiffure, les volumes et la colorimétrie de vos cheveux qui vous mettent naturellement en valeur.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-brand-cyan text-xl">▶</span>
+                                <p class="text-md leading-relaxed"><strong class="text-brand-gray">Le résultat :</strong> Une mise en beauté simplifiée au quotidien qui respecte votre silhouette globale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service B: Coaching Image -->
+                <div class="bg-brand-bg-light p-8 md:p-10 rounded-3xl border border-brand-gray/10 shadow-xl shadow-brand-gray/5 hover:border-brand-coral/30 transition-all group">
+                    <div class="space-y-6">
+                        <div class="inline-block px-4 py-1 bg-brand-coral/20 text-brand-coral font-bold rounded-full text-sm">Service B</div>
+                        <h3 class="text-2xl md:text-3xl font-bold">Révélatrice de Beauté par l'image</h3>
+                        <p class="text-xl font-bold text-brand-cyan">Faîtes Rayonner Votre Beauté Naturelle ✨</p>
+                        <p class="text-lg leading-relaxed text-brand-gray/80">
+                            Je propose des coaching en image personnalisés, sur-mesure pour faire des choix en conscience, "en partant de Soi".
+                        </p>
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-start gap-3">
+                                <span class="text-brand-coral text-xl font-bold">✨</span>
+                                <p class="text-md leading-relaxed"><strong class="text-brand-gray">Au programme :</strong> Colorimétrie, conseils maquillage, tenues vestimentaires, style (possibilité de sessions à la carte).</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-brand-coral text-xl font-bold">✨</span>
+                                <p class="text-md leading-relaxed"><strong class="text-brand-gray">Le résultat :</strong> Un style qui renforce votre confiance et révèle ce qui vous rend unique et Authentique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Qui Suis-Je -->
+    <section id="bio" class="py-24 bg-brand-bg-light relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-coral/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-cyan/5 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <!-- Short Intro / Illustration Placeholder -->
+                <div class="w-full md:w-1/3">
+                    <div class="relative">
+                        <div class="absolute -inset-4 border-2 border-brand-cyan/20 rounded-2xl translate-x-4 translate-y-4 -z-10"></div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg border border-brand-gray/5 space-y-4 text-center">
+                            <p class="text-5xl font-bold text-brand-cyan">35<span class="text-2xl ml-1">ans</span></p>
+                            <p class="text-sm font-bold uppercase tracking-widest text-brand-gray/60">De Passion</p>
+                            <div class="h-px bg-brand-gray/10 w-12 mx-auto"></div>
+                            <p class="text-5xl font-bold text-brand-coral">26<span class="text-2xl ml-1">ans</span></p>
+                            <p class="text-sm font-bold uppercase tracking-widest text-brand-gray/60">En Salon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="w-full md:w-2/3 space-y-8">
+                    <h2 class="text-3xl md:text-4xl font-bold">Stéphanie CAMUS : Votre Guide Vers Le Rayonnement <span class="text-brand-coral">✨</span></h2>
+                    
+                    <div class="space-y-6 text-lg leading-relaxed text-brand-gray/80">
+                        <p>
+                            Passionnée par l'univers de la beauté depuis plus de <strong class="text-brand-cyan">35 ans</strong>, j'ai consacré <strong class="text-brand-cyan">26 années</strong> à accompagner les femmes en salon de coiffure.
+                        </p>
+                        <p>
+                            Pour aller plus loin dans ma mission, je me suis formée et certifiée au Coaching en Image en 2019 et créé mon entreprise en Septembre 2021.
+                        </p>
+                        
+                        <div class="pt-8 relative group">
+                            <div class="absolute top-0 left-0 w-12 h-1 bg-brand-coral/30 rounded-full group-hover:w-24 transition-all duration-500"></div>
+                            <p class="text-2xl font-bold text-brand-gray italic pt-6">
+                                "Ma philosophie : la Beauté n'est pas superficielle. C'est un voyage de reconnexion à soi. Mon rôle est de vous guider pour rayonner à partir de qui vous êtes profondément."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Bénéfices -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl space-y-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-center">Ce que cet accompagnement va changer pour vous <span class="text-brand-coral">✨</span></h2>
+            
+            <div class="bg-white border-2 border-brand-gray/5 p-8 md:p-16 rounded-[3rem] shadow-2xl shadow-brand-gray/5">
+                <p class="text-xl font-bold mb-10 text-brand-gray/70 border-b border-brand-gray/10 pb-4 inline-block">Grâce à une approche sur-mesure, je vous aide à :</p>
+                
+                <ul class="grid md:grid-cols-1 gap-6">
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Valoriser votre image, avec authenticité.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Booster votre confiance, votre estime et votre amour de vous-même.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Meilleure connaissance de soi.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Renforcer votre présence et votre impact personnel et professionnel.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Créer une harmonie visuelle et intérieure.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-2xl shrink-0 mt-1">✨</span>
+                        <p class="text-xl text-brand-gray/90 leading-relaxed font-medium">Choix conscients, dans ses achats, sa beauté, dans ce qui vous correspond.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Lieu -->
+    <section class="py-24 bg-brand-cyan/5">
+        <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
+            <h2 class="text-3xl md:text-5xl font-bold">Où me retrouver ? ✨</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-3xl border border-brand-gray/5 shadow-lg group hover:scale-105 transition-all">
+                    <div class="text-5xl mb-6">🎥</div>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-cyan">Chez soi, en visio</h3>
+                    <p class="text-brand-gray/70">Un accompagnement flexible, directement depuis le confort de votre foyer.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl border border-brand-gray/5 shadow-lg group hover:scale-105 transition-all">
+                    <div class="text-5xl mb-6">📍</div>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-coral">En présentiel</h3>
+                    <p class="text-brand-gray/70">Sur Paris et toute l'Île-de-France (frais de déplacement à prévoir).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Footer / Conclusion -->
+    <footer id="contact" class="bg-brand-gray text-white py-24">
+        <div class="container mx-auto px-4 max-w-4xl text-center space-y-10">
+            <div class="space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold">Prête à Révéler Votre Potentiel Beauté ?</h2>
+                <p class="text-2xl text-brand-coral font-bold">C'est le moment de vous choisir ✨</p>
+            </div>
+            
+            <p class="text-xl text-gray-300 leading-relaxed">
+                Ne laissez plus votre image au hasard. Échangeons ensemble de vos besoins, attentes, objectifs lors d'un moment pour vous.
+            </p>
+
+            <div class="pt-8">
+                <a href="#" class="inline-block bg-brand-cyan hover:bg-brand-cyan/90 text-white font-bold py-5 px-10 rounded-full transition-all hover:scale-105 shadow-2xl shadow-cyan-500/20 text-lg md:text-xl">
+                    Réservez votre appel découverte offert (45min)<br class="hidden md:block">
+                    Prenez Rendez-Vous
+                </a>
+            </div>
+
+            <div class="pt-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm">
+                <p>© 2024 Stéphanie Camus. Tous droits réservés.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Mentions Légales</a>
+                    <a href="#" class="hover:text-white transition-colors">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
