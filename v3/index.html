@@ -637,8 +637,13 @@
 
     <!-- Mobile Menu Overlay - Redesigned for Robustness -->
     <div id="mobile-menu" class="fixed inset-0 bg-white z-[120] translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden">
+        <!-- Brand Name (Fixed at top-left) -->
+        <a href="#" class="mobile-nav-link absolute top-7 left-6 text-xl font-medium tracking-tighter text-brand-gray z-20">
+            Stéphanie <span class="text-brand-cyan">CAMUS</span>
+        </a>
+
         <!-- Close Button (Fixed at top-right, always visible) -->
-        <button id="close-menu-button" class="absolute top-6 right-6 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full">
+        <button id="close-menu-button" class="absolute top-5 right-5 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
