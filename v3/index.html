@@ -96,27 +96,6 @@
             </button>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center translate-x-full transition-transform duration-500 ease-in-out md:hidden">
-            <button id="close-menu-button" class="absolute top-6 right-6 p-4 text-brand-gray hover:text-brand-coral transition-all hover:rotate-90">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <div class="flex flex-col items-center gap-10 text-center">
-                <a href="#services" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Services</a>
-                <a href="#bio" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Parcours</a>
-                <a href="#temoignages" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Témoignages</a>
-                <a href="#benefices" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Bénéfices</a>
-                <a href="#lieu" class="mobile-nav-link text-2xl font-medium uppercase tracking-[0.3em] hover:text-brand-cyan transition-colors">Lieu</a>
-                <a href="#contact" class="mobile-nav-link bg-brand-cyan text-white px-12 py-5 rounded-full text-lg font-medium uppercase tracking-[0.2em] shadow-2xl shadow-brand-cyan/20">Contact</a>
-            </div>
-            
-            <div class="absolute bottom-12 flex gap-8">
-                <div class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40">In</div>
-                <div class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40">Ig</div>
-            </div>
-        </div>
     </nav>
 
     <!-- Section 1: Hero Section -->
@@ -653,6 +632,41 @@
 
                 </div>
              </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay - Redesigned for Robustness -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[120] translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden">
+        <!-- Close Button (Fixed at top-right, always visible) -->
+        <button id="close-menu-button" class="absolute top-6 right-6 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        
+        <!-- Scrollable Container (Independent of Close Button) -->
+        <div class="h-full overflow-y-auto overscroll-contain">
+            <div class="min-h-full flex flex-col items-center justify-center py-24 px-6 space-y-10">
+                <!-- Navigation Links -->
+                <div class="flex flex-col items-center gap-6">
+                    <a href="#services" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Services</a>
+                    <a href="#bio" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Parcours</a>
+                    <a href="#temoignages" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Témoignages</a>
+                    <a href="#benefices" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Bénéfices</a>
+                    <a href="#lieu" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Lieu</a>
+                </div>
+                
+                <!-- Contact Action -->
+                <a href="#contact" class="mobile-nav-link bg-brand-cyan text-white px-10 py-4 rounded-full text-base font-bold uppercase tracking-widest shadow-xl shadow-brand-cyan/20 transform active:scale-95 transition-all">
+                    Contact
+                </a>
+                
+                <!-- Social Icons -->
+                <div class="flex gap-8 pt-4">
+                    <a href="#" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all">In</a>
+                    <a href="#" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all">Ig</a>
+                </div>
+            </div>
         </div>
     </div>
 
