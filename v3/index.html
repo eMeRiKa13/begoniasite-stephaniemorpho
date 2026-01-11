@@ -5,28 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus</title>
     <meta name="description" content="Révélez votre beauté authentique avec Stéphanie Camus. Experte en Morpho-Coiffure et Conseil en Image à Paris, en Île-de-France et en visio. Accompagnement sur-mesure pour femmes.">
+    <link rel="canonical" href="https://www.stephanie-camus.fr/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus">
     <meta property="og:description" content="Révélez votre beauté authentique. Accompagnement sur-mesure en Morpho-Coiffure et Image pour les femmes de 40 ans et plus.">
+    <link rel="icon" type="image/png" href="./public/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./public/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./public/android-chrome-512x512.png">
     <meta property="og:image" content="./public/images/stephanie_small.jpg">
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Stéphanie Camus",
-      "image": "./public/images/stephanie_small.jpg",
+      "@type": "LocalBusiness",
+      "name": "Stéphanie Camus - Analyste Morpho-Coiffure & Coach en Image",
+      "image": "https://www.stephanie-camus.fr/public/images/stephanie_small.jpg",
       "description": "Analyste Morpho-Coiffure et Coach en Image. Accompagnement sur Paris, Île-de-France et en Visio.",
-      "url": "https://stephanie-camus.fr",
+      "url": "https://www.stephanie-camus.fr",
+      "telephone": "+33600000000",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Paris",
         "addressLocality": "Paris",
+        "postalCode": "75000",
         "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/stc_coach/",
+        "https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/"
+      ],
       "areaServed": [
         {
           "@type": "City",
@@ -49,14 +73,16 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Analyse Morpho-Coiffure"
+              "name": "Analyse Morpho-Coiffure",
+              "description": "Étude de la morphologie visage et nature des cheveux pour trouver la coupe idéale."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Coaching Image"
+              "name": "Coaching Image",
+              "description": "Accompagnement sur-mesure : colorimétrie, style, maquillage."
             }
           }
         ]
@@ -106,7 +132,11 @@
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-brand-coral/10 rounded-[4rem] transition-transform duration-700"></div>
                     <div class="relative aspect-[4/5] md:aspect-auto md:h-[32rem] lg:h-[38rem] transition-transform duration-700 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white">
-                        <img src="./public/images/stephanie_small.jpg" alt="Stéphanie Camus - Coach en Image et Analyste Morpho-Coiffure à Paris" class="w-full h-full object-cover">
+                        <picture>
+                            <source srcset="./public/images/stephanie_hero.avif" type="image/avif">
+                            <source srcset="./public/images/stephanie_hero.webp" type="image/webp">
+                            <img src="./public/images/stephanie_hero.png" alt="Stéphanie Camus - Coach en Image et Analyste Morpho-Coiffure à Paris" class="w-full h-full object-cover">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -116,15 +146,15 @@
                 <div class="space-y-4 flex flex-col">
                     <h1 class="order-3 mt-3 text-xl lg:text-2xl font-medium leading-snug text-brand-gray/80">Analyste Morpho-Coiffure & Coach en Image.</h1>
                     <p class="order-1 text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-gray/50">Stéphanie CAMUS</p>
-                    <p class="order-2 text-5xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray">
+                    <p class="order-2 text-4xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray">
                         Révélez Votre <br>
                         <span class="text-brand-cyan">Beauté Authentique</span>
                     </p>
                     <p class="order-4 text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl">
                         J'accompagne les femmes de 40 ans et plus à mieux se connaître, à se reconnecter à qui elles sont profondément, à se révéler pleinement, en utilisant la beauté comme un véritable levier de transformation intérieure.
                     </p>
-                    <div class="order-5 flex items-center gap-3 text-brand-coral font-medium">
-                        <span class="w-8 h-px bg-brand-coral"></span>
+                    <div class="order-5 flex items-center justify-center md:justify-start gap-3 text-brand-coral font-medium">
+                        <span class="hidden md:block w-8 h-px bg-brand-coral"></span>
                         <p class="italic text-base lg:text-lg">Paris, Île-de-France & Visio</p>
                     </div>
                 </div>
@@ -146,7 +176,7 @@
         <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
             <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
                 Un nouveau chapitre s'ouvre&nbsp;:<br>
-                <span class="text-brand-coral font-light italic mt-4 block">Valorisez votre Image et votre Confiance</span>
+                <span class="text-brand-coral font-light italic mt-4 block">Valorisez votre image et votre confiance</span>
             </p>
             
             <div class="space-y-8 text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light">
@@ -172,7 +202,7 @@
     <section id="services" class="py-32 bg-brand-bg-light">
         <div class="container mx-auto px-4 max-w-7xl space-y-20">
             <div class="text-center space-y-6">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mes services</h2>
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Services morpho-coiffure & image</h2>
                 <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Une double expertise <br>pour une mise en beauté sur-mesure</p>
                 <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl mx-auto">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires&nbsp;:</p>
             </div>
@@ -260,7 +290,7 @@
                 <!-- Bio Content -->
                 <div class="w-full md:w-7/12 space-y-10 reveal">
                     <div class="space-y-4">
-                        <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mon Parcours</h2>
+                        <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mon Parcours de Coach</h2>
                         <p class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray reveal">Stéphanie CAMUS&nbsp;: <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></p>
                     </div>
                     
@@ -288,7 +318,7 @@
         <div class="container mx-auto px-4 max-w-7xl space-y-20">
             <!-- Section Header -->
             <div class="text-center space-y-6 px-4">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Vos mots doux</h2>
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Témoignages clients</h2>
                 <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Elles ont osé se révéler</p>
      
                 <!-- Navigation Buttons -->
@@ -451,7 +481,7 @@
     <section id="benefices" class="py-32 bg-brand-cyan/5">
         <div class="container mx-auto px-4 max-w-5xl space-y-20">
             <div class="text-center space-y-6">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan">Les bénéfices</h2>
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan">Bénéfices du conseil en image</h2>
                 <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Ce que cet accompagnement <br>va changer pour vous</p>
                 <p class="text-lg lg:text-xl leading-relaxed text-brand-gray/70 font-light max-w-2xl mx-auto">Grâce à une approche sur-mesure, je vous aide à&nbsp;:</p>
             </div>
@@ -489,7 +519,7 @@
     <!-- Section 7: Lieu -->
     <section id="lieu" class="py-32 bg-brand-white text-center">
         <div class="container mx-auto px-4 max-w-4xl space-y-16">
-            <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Où me retrouver ?</h2>
+            <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Où trouver votre coach en image ?</h2>
             
             <div class="flex flex-col md:flex-row gap-8">
                 <div class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-cyan/5 group hover:bg-white hover:shadow-2xl transition-all duration-500">
@@ -511,7 +541,7 @@
         <div class="container mx-auto px-4 md:px-8 max-w-7xl text-center space-y-16">
             <div class="space-y-8">
                 <div class="space-y-4">
-                    <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Contact</h2>
+                    <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Me contacter</h2>
                     <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Prête à révéler votre potentiel ?</p>
                     <p class="text-xl lg:text-2xl text-brand-coral font-light italic">C'est le moment de vous choisir 💖</p>
                 </div>
@@ -539,8 +569,8 @@
                 </div>
                 
                 <div class="flex gap-4">
-                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm">In</div>
-                    <div class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm">Ig</div>
+                    <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm" aria-label="LinkedIn">In</a>
+                    <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm" aria-label="Instagram">Ig</a>
                 </div>
             </div>
         </div>
@@ -572,7 +602,7 @@
                     <div class="space-y-4">
                         <h3 class="text-xl font-medium text-brand-cyan">1. Édition du site</h3>
                         <p>
-                            En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <strong>https://stephanie-camus.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi&nbsp;:
+                            En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <strong>https://www.stephanie-camus.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi&nbsp;:
                         </p>
                         <ul class="list-disc pl-5 space-y-2">
                             <li><strong>Propriétaire du site&nbsp;:</strong> Stéphanie Camus - Contact&nbsp;: [Adresse Email] - Tel&nbsp;: [Numéro de Téléphone] - Adresse&nbsp;: [Adresse Postale].</li>
@@ -623,7 +653,7 @@
                     <div class="space-y-4">
                         <h3 class="text-xl font-medium text-brand-cyan">5. CNIL et gestion des données personnelles</h3>
                         <p>
-                            Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l'utilisateur du site <strong>https://stephanie-camus.fr</strong> dispose d'un droit d'accès, de modification et de suppression des informations collectées.
+                            Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l'utilisateur du site <strong>https://www.stephanie-camus.fr</strong> dispose d'un droit d'accès, de modification et de suppression des informations collectées.
                         </p>
                         <p>
                             Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données&nbsp;: <strong>Stéphanie Camus</strong> - [Adresse Email].
@@ -668,8 +698,8 @@
                 
                 <!-- Social Icons -->
                 <div class="flex gap-8 pt-4">
-                    <a href="#" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all">In</a>
-                    <a href="#" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all">Ig</a>
+                    <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all" aria-label="LinkedIn">In</a>
+                    <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all" aria-label="Instagram">Ig</a>
                 </div>
             </div>
         </div>

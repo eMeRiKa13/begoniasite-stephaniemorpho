@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page non trouvée | Stéphanie Camus</title>
+    <link rel="icon" type="image/png" href="/public/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/public/android-chrome-512x512.png">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00B5CC',
+                        'brand-coral': '#F8B1A5',
+                        'brand-gray': '#333333',
+                        'brand-bg-light': '#FFF9F8',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-white text-brand-gray font-sans selection:bg-brand-cyan selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-brand-coral/10">
+        <div class="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between max-w-7xl mx-auto">
+            <a href="/" class="text-xl md:text-2xl font-medium tracking-tighter text-brand-gray group">
+                Stéphanie <span class="text-brand-cyan group-hover:text-brand-coral transition-colors">CAMUS</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-7 lg:gap-10">
+                <a href="/#services" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Services</a>
+                <a href="/#bio" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Parcours</a>
+                <a href="/#temoignages" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Témoignages</a>
+                <a href="/#benefices" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Bénéfices</a>
+                <a href="/#lieu" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Lieu</a>
+                <a href="/#contact" class="bg-brand-cyan text-white px-6 lg:px-8 py-3 rounded-full text-sm font-medium uppercase tracking-[0.2em] hover:bg-brand-cyan/90 transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-button" class="md:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content (404) -->
+    <main class="flex-grow flex items-center justify-center relative pt-20">
+        <!-- Background element similar to hero but simplified -->
+        <div class="absolute inset-0 bg-brand-cyan/5 -z-10"></div>
+        
+        <div class="container mx-auto px-4 text-center space-y-8">
+            <h1 class="text-9xl font-light text-brand-cyan/20 select-none">404</h1>
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-5xl font-medium text-brand-gray">Oups ! Cette page n'existe pas.</h2>
+                <p class="text-xl font-light text-brand-gray/70 max-w-2xl mx-auto">
+                    Il semble que vous ayez suivi un lien brisé ou que la page ait été déplacée.
+                </p>
+            </div>
+            
+            <div class="pt-8">
+                <a href="/" class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:scale-105 shadow-xl shadow-brand-cyan/20 text-base uppercase tracking-widest">
+                    Retour à l'accueil
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-bg-light py-20 border-t border-brand-coral/10">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl text-center space-y-10">
+            <div class="space-y-4">
+                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Me contacter</h2>
+                <div class="flex justify-center gap-8 pt-4">
+                    <a href="/#contact" class="inline-flex flex-col gap-2 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-8 rounded-[2.5rem] transition-all hover:scale-105 shadow-xl shadow-brand-cyan/20 group text-sm uppercase tracking-wider">
+                        Réserver un appel
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-10 border-t border-brand-gray/5 flex flex-col md:flex-row justify-between items-center gap-10 text-brand-gray/30">
+                <div class="text-left space-y-1">
+                    <p class="font-medium text-brand-gray/50">Stéphanie CAMUS</p>
+                    <p class="text-sm font-light">Tous droits réservés.</p>
+                </div>
+                
+                <div class="flex gap-4">
+                     <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm" aria-label="LinkedIn">In</a>
+                     <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-brand-gray/5 flex items-center justify-center hover:border-brand-coral hover:text-brand-coral transition-colors cursor-pointer text-sm" aria-label="Instagram">Ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[120] translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden">
+        <!-- Brand Name -->
+        <a href="/" class="mobile-nav-link absolute top-7 left-6 text-xl font-medium tracking-tighter text-brand-gray z-20">
+            Stéphanie <span class="text-brand-cyan">CAMUS</span>
+        </a>
+
+        <!-- Close Button -->
+        <button id="close-menu-button" class="absolute top-5 right-5 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        
+        <!-- Menu Items -->
+        <div class="h-full overflow-y-auto overscroll-contain">
+            <div class="min-h-full flex flex-col items-center justify-center py-24 px-6 space-y-10">
+                <div class="flex flex-col items-center gap-6">
+                    <a href="/#services" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Services</a>
+                    <a href="/#bio" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Parcours</a>
+                    <a href="/#temoignages" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Témoignages</a>
+                    <a href="/#benefices" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Bénéfices</a>
+                    <a href="/#lieu" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Lieu</a>
+                </div>
+                
+                <a href="/#contact" class="mobile-nav-link bg-brand-cyan text-white px-10 py-4 rounded-full text-base font-bold uppercase tracking-widest shadow-xl shadow-brand-cyan/20 transform active:scale-95 transition-all">
+                    Contact
+                </a>
+                
+                <div class="flex gap-8 pt-4">
+                    <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all" aria-label="LinkedIn">In</a>
+                    <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/40 hover:border-brand-coral hover:text-brand-coral transition-all" aria-label="Instagram">Ig</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Script for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const toggleMenu = (show) => {
+                if (show) {
+                    mobileMenu.classList.remove('translate-x-full');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('translate-x-full');
+                    document.body.style.overflow = '';
+                }
+            };
+
+            if (mobileMenuButton) mobileMenuButton.addEventListener('click', () => toggleMenu(true));
+            if (closeMenuButton) closeMenuButton.addEventListener('click', () => toggleMenu(false));
+            mobileNavLinks.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+        });
+    </script>
+</body>
+</html>
