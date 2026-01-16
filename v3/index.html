@@ -145,11 +145,11 @@
       class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-brand-coral/10"
     >
       <div
-        class="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between max-w-7xl mx-auto"
+        class="container mx-auto px-4 lg:px-8 h-20 flex items-center justify-between max-w-7xl mx-auto"
       >
         <a
           href="#"
-          class="text-xl md:text-2xl font-medium tracking-tighter text-brand-gray group"
+          class="text-xl lg:text-2xl font-medium tracking-tighter text-brand-gray group"
         >
           Stéphanie
           <span
@@ -159,7 +159,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-7 lg:gap-10">
+        <div class="hidden lg:flex items-center gap-7 lg:gap-10">
           <a
             href="#services"
             class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
@@ -195,7 +195,7 @@
         <!-- Mobile Menu Toggle -->
         <button
           id="mobile-menu-button"
-          class="md:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors"
+          class="lg:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors"
           aria-label="Menu"
         >
           <svg
@@ -221,10 +221,10 @@
       class="relative min-h-[85vh] flex items-center pt-24 overflow-hidden bg-brand-cyan/5"
     >
       <div
-        class="container mx-auto px-4 py-8 md:px-8 md:py-24 flex flex-col md:flex-row items-center gap-24 relative z-10 max-w-7xl mx-auto"
+        class="container mx-auto px-4 py-8 md:px-8 md:py-24 flex flex-col md:flex-row items-center gap-12 lg:gap-24 relative z-10 max-w-7xl mx-auto"
       >
         <!-- Left: Styled Photo -->
-        <div class="w-full md:w-5/12">
+        <div class="w-full md:w-5/12 max-w-lg">
           <div class="relative group">
             <div
               class="absolute -inset-2 md:-inset-4 bg-brand-coral/10 rounded-[4rem] transition-transform duration-700"
@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <div class="pt-6">
+          <div class="pb-8 lg:pt-6">
             <a
               href="#contact"
               class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:gap-6 shadow-xl shadow-brand-cyan/20 text-base uppercase tracking-widest"
@@ -659,7 +659,47 @@
           id="testimonials-carousel"
           class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-4 no-scrollbar -mx-4 md:mx-0"
         >
-          <!-- 1. Mouna -->
+          <!-- 1. Marie -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Depuis mon accompagnement avec Stéphanie, je me sens beaucoup
+                  mieux avec mes cheveux. Elle a un talent incroyable et une
+                  parfaite maîtrise de son domaine. Elle sait précisément quelle
+                  coupe vous ira, explique pourquoi, et fournit tous les détails
+                  nécessaires pour donner des consignes claires à votre
+                  coiffeur.
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg"
+                  >
+                    M
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Marie</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Cuisine yoga
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Mouna -->
           <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
             <div
               class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
