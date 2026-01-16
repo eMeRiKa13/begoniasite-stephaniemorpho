@@ -1,719 +1,1454 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus</title>
-    <meta name="description" content="Révélez votre beauté authentique avec Stéphanie Camus. Experte en Morpho-Coiffure et Conseil en Image à Paris, en Île-de-France et en visio. Accompagnement sur-mesure pour femmes.">
-    <link rel="canonical" href="https://www.stephanie-camus.fr/" />
-    
+    <meta
+      name="description"
+      content="Révélez votre beauté authentique avec Stéphanie Camus. Experte en Morpho-Coiffure et Conseil en Image à Paris, en Île-de-France et en visio. Accompagnement sur-mesure pour femmes."
+    />
+    <link rel="canonical" href="https://stephanie-camus.fr/" />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus">
-    <meta property="og:description" content="Révélez votre beauté authentique. Accompagnement sur-mesure en Morpho-Coiffure et Image pour les femmes de 40 ans et plus.">
-    <link rel="icon" type="image/png" href="./public/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./public/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="./public/android-chrome-512x512.png">
-    <meta property="og:image" content="./public/images/stephanie_small.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stephanie-camus.fr/" />
+    <meta property="og:site_name" content="Stéphanie Camus" />
+    <meta
+      property="og:title"
+      content="Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus"
+    />
+    <meta
+      property="og:description"
+      content="Révélez votre beauté authentique. Accompagnement sur-mesure en Morpho-Coiffure et Image pour les femmes de 40 ans et plus."
+    />
+    <meta
+      property="og:image"
+      content="https://stephanie-camus.fr/images/stephanie_hero_update.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://stephanie-camus.fr/" />
+    <meta
+      name="twitter:title"
+      content="Analyste Morpho-Coiffure & Coach en Image | Stéphanie Camus"
+    />
+    <meta
+      name="twitter:description"
+      content="Révélez votre beauté authentique. Accompagnement sur-mesure en Morpho-Coiffure et Image pour les femmes de 40 ans et plus."
+    />
+    <meta
+      name="twitter:image"
+      content="https://stephanie-camus.fr/images/stephanie_hero_update.jpg"
+    />
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./android-chrome-512x512.png"
+    />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Stéphanie Camus - Analyste Morpho-Coiffure & Coach en Image",
-      "image": "https://www.stephanie-camus.fr/public/images/stephanie_small.jpg",
-      "description": "Analyste Morpho-Coiffure et Coach en Image. Accompagnement sur Paris, Île-de-France et en Visio.",
-      "url": "https://www.stephanie-camus.fr",
-      "telephone": "+33600000000",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Paris",
-        "addressLocality": "Paris",
-        "postalCode": "75000",
-        "addressRegion": "Île-de-France",
-        "addressCountry": "FR"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Stéphanie Camus - Analyste Morpho-Coiffure & Coach en Image",
+        "image": "https://stephanie-camus.fr/images/stephanie_hero_update.jpg",
+        "description": "Analyste Morpho-Coiffure et Coach en Image. Accompagnement sur Paris, Île-de-France et en Visio.",
+        "url": "https://stephanie-camus.fr",
+        "telephone": "+33600000000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Paris",
+          "addressLocality": "Paris",
+          "postalCode": "75000",
+          "addressRegion": "Île-de-France",
+          "addressCountry": "FR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.instagram.com/stc_coach/",
+          "https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/"
         ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.instagram.com/stc_coach/",
-        "https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/"
-      ],
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Paris"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Île-de-France"
-        },
-        {
-          "@type": "Place",
-          "name": "En Visio (Monde entier)"
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services de Conseil en Image",
-        "itemListElement": [
+        "areaServed": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Analyse Morpho-Coiffure",
-              "description": "Étude de la morphologie visage et nature des cheveux pour trouver la coupe idéale."
-            }
+            "@type": "City",
+            "name": "Paris"
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Coaching Image",
-              "description": "Accompagnement sur-mesure : colorimétrie, style, maquillage."
-            }
+            "@type": "AdministrativeArea",
+            "name": "Île-de-France"
+          },
+          {
+            "@type": "Place",
+            "name": "En Visio (Monde entier)"
           }
-        ]
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services de Conseil en Image",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Analyse Morpho-Coiffure",
+                "description": "Étude de la morphologie visage et nature des cheveux pour trouver la coupe idéale."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Coaching Image",
+                "description": "Accompagnement sur-mesure : colorimétrie, style, maquillage."
+              }
+            }
+          ]
+        }
       }
-    }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
-</head>
-<body class="bg-white text-brand-gray font-sans selection:bg-brand-cyan selection:text-white overflow-x-hidden">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body
+    class="bg-white text-brand-gray font-sans selection:bg-brand-cyan selection:text-white overflow-x-hidden"
+  >
     <!-- Navigation Header -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-brand-coral/10">
-        <div class="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between max-w-7xl mx-auto">
-            <a href="#" class="text-xl md:text-2xl font-medium tracking-tighter text-brand-gray group">
-                Stéphanie <span class="text-brand-cyan group-hover:text-brand-coral transition-colors">CAMUS</span>
-            </a>
-            
-            <!-- Desktop Nav -->
-            <div class="hidden md:flex items-center gap-7 lg:gap-10">
-                <a href="#services" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Services</a>
-                <a href="#bio" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Parcours</a>
-                <a href="#temoignages" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Témoignages</a>
-                <a href="#benefices" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Bénéfices</a>
-                <a href="#lieu" class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors">Lieu</a>
-                <a href="#contact" class="bg-brand-cyan text-white px-6 lg:px-8 py-3 rounded-full text-sm font-medium uppercase tracking-[0.2em] hover:bg-brand-cyan/90 transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20">Contact</a>
-            </div>
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-brand-coral/10"
+    >
+      <div
+        class="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between max-w-7xl mx-auto"
+      >
+        <a
+          href="#"
+          class="text-xl md:text-2xl font-medium tracking-tighter text-brand-gray group"
+        >
+          Stéphanie
+          <span
+            class="text-brand-cyan group-hover:text-brand-coral transition-colors"
+            >CAMUS</span
+          >
+        </a>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-button" class="md:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </button>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-7 lg:gap-10">
+          <a
+            href="#services"
+            class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+            >Services</a
+          >
+          <a
+            href="#bio"
+            class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+            >Parcours</a
+          >
+          <a
+            href="#temoignages"
+            class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+            >Témoignages</a
+          >
+          <a
+            href="#benefices"
+            class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+            >Bénéfices</a
+          >
+          <a
+            href="#lieu"
+            class="text-sm font-medium uppercase tracking-[0.2em] hover:text-brand-cyan transition-colors"
+            >Lieu</a
+          >
+          <a
+            href="#contact"
+            class="bg-brand-cyan text-white px-6 lg:px-8 py-3 rounded-full text-sm font-medium uppercase tracking-[0.2em] hover:bg-brand-cyan/90 transition-all hover:scale-105 shadow-lg shadow-brand-cyan/20"
+            >Contact</a
+          >
         </div>
 
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-brand-gray p-2 hover:text-brand-cyan transition-colors"
+          aria-label="Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <!-- Section 1: Hero Section -->
-    <header class="relative min-h-[85vh] flex items-center pt-24 overflow-hidden bg-brand-cyan/5">
-        <div class="container mx-auto px-4 py-8 md:px-8 md:py-24 flex flex-col md:flex-row items-center gap-24 relative z-10 max-w-7xl mx-auto">
-            <!-- Left: Styled Photo -->
-            <div class="w-full md:w-5/12">
-                <div class="relative group">
-                    <div class="absolute -inset-2 md:-inset-4 bg-brand-coral/10 rounded-[4rem] transition-transform duration-700"></div>
-                    <div class="relative aspect-[4/5] md:aspect-auto md:h-[32rem] lg:h-[38rem] transition-transform duration-700 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white">
-                        <picture>
-                            <source srcset="./public/images/stephanie_hero.avif" type="image/avif">
-                            <source srcset="./public/images/stephanie_hero.webp" type="image/webp">
-                            <img src="./public/images/stephanie_hero.png" alt="Stéphanie Camus - Coach en Image et Analyste Morpho-Coiffure à Paris" class="w-full h-full object-cover">
-                        </picture>
-                    </div>
-                </div>
+    <header
+      class="relative min-h-[85vh] flex items-center pt-24 overflow-hidden bg-brand-cyan/5"
+    >
+      <div
+        class="container mx-auto px-4 py-8 md:px-8 md:py-24 flex flex-col md:flex-row items-center gap-24 relative z-10 max-w-7xl mx-auto"
+      >
+        <!-- Left: Styled Photo -->
+        <div class="w-full md:w-5/12">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 md:-inset-4 bg-brand-coral/10 rounded-[4rem] transition-transform duration-700"
+            ></div>
+            <div
+              class="relative aspect-[4/5] md:aspect-auto md:h-[32rem] lg:h-[38rem] transition-transform duration-700 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white"
+            >
+              <picture>
+                <source
+                  srcset="./images/stephanie_hero_update.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./images/stephanie_hero_update.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/stephanie_hero_update.jpg"
+                  alt="Stéphanie Camus - Coach en Image et Analyste Morpho-Coiffure à Paris"
+                  class="w-full h-full object-cover"
+                />
+              </picture>
             </div>
-
-            <!-- Right: Content -->
-            <div class="w-full md:w-7/12 text-center md:text-left space-y-8">
-                <div class="space-y-4 flex flex-col">
-                    <h1 class="order-3 mt-3 text-xl lg:text-2xl font-medium leading-snug text-brand-gray/80">Analyste Morpho-Coiffure & Coach en Image.</h1>
-                    <p class="order-1 text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-gray/50">Stéphanie CAMUS</p>
-                    <p class="order-2 text-4xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray">
-                        Révélez Votre <br>
-                        <span class="text-brand-cyan">Beauté Authentique</span>
-                    </p>
-                    <p class="order-4 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl">
-                        J'accompagne les femmes de 40 ans et plus à mieux se connaître, à se reconnecter à qui elles sont profondément, à se révéler pleinement, en utilisant la beauté comme un véritable levier de transformation intérieure.
-                    </p>
-                    <div class="order-5 flex items-center justify-center md:justify-start gap-3 text-brand-coral font-medium">
-                        <span class="hidden md:block w-8 h-px bg-brand-coral"></span>
-                        <p class="italic text-base lg:text-lg">Paris, Île-de-France & Visio</p>
-                    </div>
-                </div>
-
-                <div class="pt-6">
-                    <a href="#contact" class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:gap-6 shadow-xl shadow-brand-cyan/20 text-base uppercase tracking-widest">
-                        Commencer ma transformation
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Right: Content -->
+        <div class="w-full md:w-7/12 text-center md:text-left space-y-8">
+          <div class="space-y-4 flex flex-col">
+            <h1
+              class="order-3 mt-3 text-xl lg:text-2xl font-medium leading-snug text-brand-gray/80"
+            >
+              Analyste Morpho-Coiffure & Coach en Image.
+            </h1>
+            <p
+              class="order-1 text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-gray/50"
+            >
+              Stéphanie CAMUS
+            </p>
+            <p
+              class="order-2 text-4xl lg:text-6xl font-medium tracking-tight leading-tight text-brand-gray"
+            >
+              Révélez Votre <br />
+              <span class="text-brand-cyan">Beauté Authentique</span>
+            </p>
+            <p
+              class="order-4 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl"
+            >
+              J'accompagne les femmes de 40 ans et plus à mieux se connaître, à
+              se reconnecter à qui elles sont profondément, à se révéler
+              pleinement, en utilisant la beauté comme un véritable levier de
+              transformation intérieure.
+            </p>
+            <div
+              class="order-5 flex items-center justify-center md:justify-start gap-3 text-brand-coral font-medium"
+            >
+              <span class="hidden md:block w-8 h-px bg-brand-coral"></span>
+              <p class="italic text-base lg:text-lg">
+                Paris, Île-de-France & Visio
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-4 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-5 px-10 rounded-full transition-all hover:gap-6 shadow-xl shadow-brand-cyan/20 text-base uppercase tracking-widest"
+            >
+              Commencer ma transformation
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Section 2: Le Constat -->
     <section id="approche" class="py-20 lg:py-32 bg-white relative">
-        <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
-            <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
-                Un nouveau chapitre s'ouvre&nbsp;:<br>
-                <span class="text-brand-coral font-light italic mt-4 block">Valorisez votre image et votre confiance</span>
-            </p>
-            
-            <div class="text-left space-y-8 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">
-                <p>
-                    Après 40 ans, la maturité s'installe et les priorités changent. Entre vos rôles de mère et de femme active, le <span class="text-brand-cyan font-medium">conseil en image</span> devient un levier puissant pour réaligner celle que vous êtes devenue avec celle que vous montrez au monde.
-                </p>
-                <p>
-                    C'est le moment idéal pour investir en vous. Il ne s'agit pas de vous transformer, mais de vous révéler. Grâce à la <span class="text-brand-coral font-medium">morpho-coiffure</span> et à l'étude de votre <span class="text-brand-cyan font-medium">style personnel</span>, nous créerons une harmonie visuelle qui renforce votre estime de soi au quotidien.
-                </p>
-                <div class="border-l-[4px] border-brand-coral/30 bg-brand-bg-light/50 p-8 rounded-r-3xl">
-                    <p class="text-left text-lg lg:text-xl font-light text-brand-gray italic leading-relaxed">
-                        "Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur. Une image valorisante n'est pas superficielle, c'est le socle de votre bien-être."
-                    </p>
-                </div>
+      <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
+        <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+          Un nouveau chapitre s'ouvre&nbsp;:<br />
+          <span class="text-brand-coral font-light italic mt-4 block"
+            >Valorisez votre image et votre confiance</span
+          >
+        </p>
 
-                <p class="text-center text-2xl lg:text-3xl font-light text-brand-cyan pt-4">
-                    Tout changement commence par <span class="text-brand-coral decoration-from-font underline-offset-8">Soi-Même.</span>
-                </p>
-            </div>
+        <div
+          class="text-left space-y-8 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+        >
+          <p>
+            Après 40 ans, la maturité s'installe et les priorités changent.
+            Entre vos rôles de mère et de femme active, le
+            <span class="text-brand-cyan font-medium">conseil en image</span>
+            devient un levier puissant pour réaligner celle que vous êtes
+            devenue avec celle que vous montrez au monde.
+          </p>
+          <p>
+            C'est le moment idéal pour investir en vous. Il ne s'agit pas de
+            vous transformer, mais de vous révéler. Grâce à la
+            <span class="text-brand-coral font-medium">morpho-coiffure</span> et
+            à l'étude de votre
+            <span class="text-brand-cyan font-medium">style personnel</span>,
+            nous créerons une harmonie visuelle qui renforce votre estime de soi
+            au quotidien.
+          </p>
+          <div
+            class="border-l-[4px] border-brand-coral/30 bg-brand-bg-light/50 p-8 rounded-r-3xl"
+          >
+            <p
+              class="text-left text-lg lg:text-xl font-light text-brand-gray italic leading-relaxed"
+            >
+              "Être bien avec Soi, c'est s'autoriser à s'offrir le Meilleur. Une
+              image valorisante n'est pas superficielle, c'est le socle de votre
+              bien-être."
+            </p>
+          </div>
+
+          <p
+            class="text-center text-2xl lg:text-3xl font-light text-brand-cyan pt-4"
+          >
+            Tout changement commence par
+            <span
+              class="text-brand-coral decoration-from-font underline-offset-8"
+              >Soi-Même.</span
+            >
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Section 3: Expertise & Services -->
     <section id="services" class="py-20 lg:py-32 bg-brand-bg-light">
-        <div class="container mx-auto px-4 max-w-7xl space-y-12 lg:space-y-20">
-            <div class="text-center space-y-6">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Services morpho-coiffure & image</h2>
-                <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Une double expertise <br>pour une mise en beauté sur-mesure</p>
-                <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto">Je vous propose un accompagnement personnalisé à travers deux approches complémentaires&nbsp;:</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
-                <!-- Service A: Morpho-Coiffure -->
-                <div class="bg-white p-8 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-cyan/5 hover:shadow-brand-cyan/10 transition-all border border-brand-gray/5 group">
-                    <div class="space-y-6">
-                        <div class="space-y-2">
-                            <h3 class="text-2xl font-medium tracking-tight">L'analyse morpho-coiffure</h3>
-                            <p class="text-lg font-light text-brand-coral tracking-wide">Plus qu'une coupe, une Révélation 💇‍♀️</p>
-                        </div>
-                        <p class="text-lg lg:text-xl leading-relaxed text-brand-gray font-light">
-                            En tant que professionnelle spécialisée, j'étudie la morphologie de votre visage et la nature de vos cheveux en lien avec votre personnalité.
-                        </p>
-                        <div class="space-y-6 font-light">
-                            <div class="flex items-start gap-4">
-                                <div class="w-5 h-5 rounded-full bg-brand-cyan/5 flex items-center justify-center shrink-0 mt-1">
-                                    <div class="w-1.5 h-1.5 bg-brand-cyan rounded-full"></div>
-                                </div>
-                                <p class="text-lg lg:text-xl"><strong class="text-brand-gray font-medium">L'objectif&nbsp;:</strong> Trouver la coupe, la coiffure, les volumes et la colorimétrie de vos cheveux qui vous mettent naturellement en valeur.</p>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-5 h-5 rounded-full bg-brand-cyan/5 flex items-center justify-center shrink-0 mt-1">
-                                    <div class="w-1.5 h-1.5 bg-brand-cyan rounded-full"></div>
-                                </div>
-                                <p class="text-lg lg:text-xl"><strong class="text-brand-gray font-medium">Le résultat&nbsp;:</strong> Une mise en beauté simplifiée au quotidien qui respecte votre silhouette globale.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service B: Coaching Image -->
-                <div class="bg-white p-8 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-coral/5 hover:shadow-brand-coral/10 transition-all border border-brand-gray/5 group">
-                    <div class="space-y-6">                
-                        <div class="space-y-2">
-                            <h3 class="text-2xl font-medium tracking-tight">Coaching Image</h3>
-                            <p class="text-lg font-light text-brand-cyan tracking-wide">Faites Rayonner Votre Beauté Naturelle 🎨</p>
-                        </div>
-                        <p class="text-lg lg:text-xl leading-relaxed text-brand-gray font-light">
-                            Je propose des coaching en image personnalisés, sur-mesure pour faire des choix en conscience, "en partant de Soi".
-                        </p>
-                        <div class="space-y-6 font-light">
-                            <div class="flex items-start gap-4">
-                                <div class="w-5 h-5 rounded-full bg-brand-coral/10 flex items-center justify-center shrink-0 mt-1">
-                                    <div class="w-1.5 h-1.5 bg-brand-coral rounded-full"></div>
-                                </div>
-                                <p class="text-lg lg:text-xl"><strong class="text-brand-gray font-medium">Au programme&nbsp;:</strong> Colorimétrie, conseils maquillage, tenues vestimentaires, style.</p>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-5 h-5 rounded-full bg-brand-coral/10 flex items-center justify-center shrink-0 mt-1">
-                                    <div class="w-1.5 h-1.5 bg-brand-coral rounded-full"></div>
-                                </div>
-                                <p class="text-lg lg:text-xl"><strong class="text-brand-gray font-medium">Le résultat&nbsp;:</strong> Un style qui renforce votre confiance et révèle votre authenticité.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-4 max-w-7xl space-y-12 lg:space-y-20">
+        <div class="text-center space-y-6">
+          <h2
+            class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral"
+          >
+            Services morpho-coiffure & image
+          </h2>
+          <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+            Une double expertise <br />pour une mise en beauté sur-mesure
+          </p>
+          <p
+            class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto"
+          >
+            Je vous propose un accompagnement personnalisé à travers deux
+            approches complémentaires&nbsp;:
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+          <!-- Service A: Morpho-Coiffure -->
+          <div
+            class="bg-white p-8 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-cyan/5 hover:shadow-brand-cyan/10 transition-all border border-brand-gray/5 group"
+          >
+            <div class="space-y-6">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-medium tracking-tight">
+                  L'analyse morpho-coiffure
+                </h3>
+                <p class="text-lg font-light text-brand-coral tracking-wide">
+                  Plus qu'une coupe, une Révélation 💇‍♀️
+                </p>
+              </div>
+              <p
+                class="text-lg lg:text-xl leading-relaxed text-brand-gray font-light"
+              >
+                En tant que professionnelle spécialisée, j'étudie la morphologie
+                de votre visage et la nature de vos cheveux en lien avec votre
+                personnalité.
+              </p>
+              <div class="space-y-6 font-light">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-5 h-5 rounded-full bg-brand-cyan/5 flex items-center justify-center shrink-0 mt-1"
+                  >
+                    <div class="w-1.5 h-1.5 bg-brand-cyan rounded-full"></div>
+                  </div>
+                  <p class="text-lg lg:text-xl">
+                    <strong class="text-brand-gray font-medium"
+                      >L'objectif&nbsp;:</strong
+                    >
+                    Trouver la coupe, la coiffure, les volumes et la
+                    colorimétrie de vos cheveux qui vous mettent naturellement
+                    en valeur.
+                  </p>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-5 h-5 rounded-full bg-brand-cyan/5 flex items-center justify-center shrink-0 mt-1"
+                  >
+                    <div class="w-1.5 h-1.5 bg-brand-cyan rounded-full"></div>
+                  </div>
+                  <p class="text-lg lg:text-xl">
+                    <strong class="text-brand-gray font-medium"
+                      >Le résultat&nbsp;:</strong
+                    >
+                    Une mise en beauté simplifiée au quotidien qui respecte
+                    votre silhouette globale.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service B: Coaching Image -->
+          <div
+            class="bg-white p-8 lg:p-14 rounded-[3.5rem] shadow-xl shadow-brand-coral/5 hover:shadow-brand-coral/10 transition-all border border-brand-gray/5 group"
+          >
+            <div class="space-y-6">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-medium tracking-tight">
+                  Coaching Image
+                </h3>
+                <p class="text-lg font-light text-brand-cyan tracking-wide">
+                  Faites Rayonner Votre Beauté Naturelle 🎨
+                </p>
+              </div>
+              <p
+                class="text-lg lg:text-xl leading-relaxed text-brand-gray font-light"
+              >
+                Je propose des coaching en image personnalisés, sur-mesure pour
+                faire des choix en conscience, "en partant de Soi".
+              </p>
+              <div class="space-y-6 font-light">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-5 h-5 rounded-full bg-brand-coral/10 flex items-center justify-center shrink-0 mt-1"
+                  >
+                    <div class="w-1.5 h-1.5 bg-brand-coral rounded-full"></div>
+                  </div>
+                  <p class="text-lg lg:text-xl">
+                    <strong class="text-brand-gray font-medium"
+                      >Au programme&nbsp;:</strong
+                    >
+                    Colorimétrie, conseils maquillage, tenues vestimentaires,
+                    style.
+                  </p>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-5 h-5 rounded-full bg-brand-coral/10 flex items-center justify-center shrink-0 mt-1"
+                  >
+                    <div class="w-1.5 h-1.5 bg-brand-coral rounded-full"></div>
+                  </div>
+                  <p class="text-lg lg:text-xl">
+                    <strong class="text-brand-gray font-medium"
+                      >Le résultat&nbsp;:</strong
+                    >
+                    Un style qui renforce votre confiance et révèle votre
+                    authenticité.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section 4: Qui Suis-Je -->
     <section id="bio" class="py-20 lg:py-32 bg-white relative overflow-hidden">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="flex flex-col md:flex-row items-center gap-20">
-                <!-- Stats Display -->
-                <div class="w-full md:w-5/12">
-                    <div class="relative">
-                        <div class="absolute -top-10 -left-10 w-64 h-64 bg-brand-coral/5 rounded-full -z-10"></div>
-                        <div class="bg-white p-12 lg:p-16 rounded-[4rem] shadow-2xl border border-brand-gray/5 space-y-8 text-center relative z-10">
-                            <div class="space-y-2">
-                                <p class="text-6xl lg:text-7xl font-medium text-brand-cyan tracking-tighter">35<span class="text-xl tracking-wide font-light ml-1">ans</span></p>
-                                <p class="text-base font-medium uppercase tracking-wider text-brand-gray/30">De Passion</p>
-                            </div>
-                            <div class="h-px bg-brand-gray/5 w-12 mx-auto"></div>
-                            <div class="space-y-2">
-                                <p class="text-6xl lg:text-7xl font-medium text-brand-coral tracking-tighter">26<span class="text-xl tracking-wide font-light ml-1">ans</span></p>
-                                <p class="text-base font-medium uppercase tracking-wider text-brand-gray/30">En Salon</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container mx-auto px-4 max-w-5xl">
+        <div class="flex flex-col md:flex-row items-center gap-20">
+          <!-- Stats Display -->
+          <div class="w-full md:w-5/12">
+            <div class="relative">
+              <div
+                class="absolute -top-10 -left-10 w-64 h-64 bg-brand-coral/5 rounded-full -z-10"
+              ></div>
+              <div
+                class="bg-white p-12 lg:p-16 rounded-[4rem] shadow-2xl border border-brand-gray/5 space-y-8 text-center relative z-10"
+              >
+                <div class="space-y-2">
+                  <p
+                    class="text-6xl lg:text-7xl font-medium text-brand-cyan tracking-tighter"
+                  >
+                    35<span class="text-xl tracking-wide font-light ml-1"
+                      >ans</span
+                    >
+                  </p>
+                  <p
+                    class="text-base font-medium uppercase tracking-wider text-brand-gray/30"
+                  >
+                    De Passion
+                  </p>
                 </div>
-
-                <!-- Bio Content -->
-                <div class="w-full md:w-7/12 space-y-10 reveal">
-                    <div class="space-y-4">
-                        <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Mon Parcours de Coach</h2>
-                        <p class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray reveal">Stéphanie CAMUS&nbsp;: <br><span class="text-brand-cyan">Votre Guide Vers Le Rayonnement</span></p>
-                    </div>
-                    
-                    <div class="space-y-6 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">
-                        <p>
-                            Passionnée par l'univers de la beauté depuis plus de 35 ans, j'ai consacré 26 années à accompagner les femmes en salon de coiffure.
-                        </p>
-                        <p>
-                            Certifiée au Coaching en Image en 2019, j'ai créé mon entreprise en 2021 pour offrir un accompagnement plus global et profond.
-                        </p>
-                        
-                        <div class="pt-10 border-l-[4px] border-brand-coral/30 bg-brand-bg-light/50 p-8 rounded-r-3xl">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray italic leading-relaxed">
-                                "La Beauté n'est pas superficielle. C'est un voyage de reconnexion à soi. Mon rôle est de vous guider pour rayonner à partir de qui vous êtes profondément."
-                            </p>
-                        </div>
-                    </div>
+                <div class="h-px bg-brand-gray/5 w-12 mx-auto"></div>
+                <div class="space-y-2">
+                  <p
+                    class="text-6xl lg:text-7xl font-medium text-brand-coral tracking-tighter"
+                  >
+                    26<span class="text-xl tracking-wide font-light ml-1"
+                      >ans</span
+                    >
+                  </p>
+                  <p
+                    class="text-base font-medium uppercase tracking-wider text-brand-gray/30"
+                  >
+                    En Salon
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Bio Content -->
+          <div class="w-full md:w-7/12 space-y-10 reveal">
+            <div class="space-y-4">
+              <h2
+                class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral"
+              >
+                Mon Parcours de Coach
+              </h2>
+              <p
+                class="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-brand-gray reveal"
+              >
+                Stéphanie CAMUS&nbsp;: <br /><span class="text-brand-cyan"
+                  >Votre Guide Vers Le Rayonnement</span
+                >
+              </p>
+            </div>
+
+            <div
+              class="space-y-6 text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              <p>
+                Passionnée par l'univers de la beauté depuis plus de 35 ans,
+                j'ai consacré 26 années à accompagner les femmes en salon de
+                coiffure.
+              </p>
+              <p>
+                Certifiée au Coaching en Image en 2019, j'ai créé mon entreprise
+                en 2021 pour offrir un accompagnement plus global et profond.
+              </p>
+
+              <div
+                class="pt-10 border-l-[4px] border-brand-coral/30 bg-brand-bg-light/50 p-8 rounded-r-3xl"
+              >
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray italic leading-relaxed"
+                >
+                  "La Beauté n'est pas superficielle. C'est un voyage de
+                  reconnexion à soi. Mon rôle est de vous guider pour rayonner à
+                  partir de qui vous êtes profondément."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section 5: Témoignages -->
-    <section id="temoignages" class="py-20 lg:py-32 bg-white relative overflow-hidden">
-        <div class="container mx-auto px-4 max-w-7xl space-y-12 lg:space-y-20">
-            <!-- Section Header -->
-            <div class="text-center space-y-6 px-4">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Témoignages clients</h2>
-                <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Elles ont osé se révéler</p>
-     
-                <!-- Navigation Buttons -->
-                <div class="flex justify-center gap-4 pt-4">
-                    <button id="testimonials-prev" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/50 hover:bg-brand-cyan hover:text-white hover:border-transparent transition-all group" aria-label="Témoignage précédent">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:-translate-x-0.5 transition-transform">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                        </svg>
-                    </button>
-                    <button id="testimonials-next" class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/50 hover:bg-brand-cyan hover:text-white hover:border-transparent transition-all group" aria-label="Témoignage suivant">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:translate-x-0.5 transition-transform">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+    <section
+      id="temoignages"
+      class="py-20 lg:py-32 bg-white relative overflow-hidden"
+    >
+      <div class="container mx-auto px-4 max-w-7xl space-y-12 lg:space-y-20">
+        <!-- Section Header -->
+        <div class="text-center space-y-6 px-4">
+          <h2
+            class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral"
+          >
+            Témoignages clients
+          </h2>
+          <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+            Elles ont osé se révéler
+          </p>
 
-            <!-- Testimonials Carousel -->
-            <!-- Desktop: shows 2 cards (w-[calc(50%-12px)]) | Mobile: shows 1 card (w-[85vw]) -->
-            <div id="testimonials-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-4 no-scrollbar -mx-4 md:mx-0">
-                
-                <!-- 1. Mouna -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                Stéphanie propose des accompagnements en or ✨, Écoute, Personnalisation, Précision et Grande Générosité ! Merci Stéphanie pour ce que tu m'as apporté sur le chemin du Rayonnement 🙏💓🦚🦋🌈
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg">M</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Mouna</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Professeur de yoga, danse, universitaire</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. Tanya (Institut) -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                J'ai suivi l'atelier coiffure avec Stéphanie, je porte désormais un regard différent sur mes cheveux, avec plus de confiance et de compréhension. J'ai beaucoup apprécié nos échanges, sa belle énergie, sa bienveillance. Un moment agréable et utile.
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg">T</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Tanya</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Responsable Institut de Beauté</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Paule -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                Avant ma rencontre avec Stéphanie, j'étais perdue pour faire du shopping, je m'habillais sans vraiment me regarder. Le coaching en image pour découvrir mes couleurs m'a permis de prendre du temps pour moi, de me regarder... J'ai aujourd'hui une nouvelle vision sur les couleurs et les vêtements.
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg">P</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Paule</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Coach de vie</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Florence -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                Merci Stéphanie, suite à l'atelier Morpho-Coiffure, j'ai une nouvelle coiffure, je me sens belle grâce à toi.
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg">F</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Florence</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Infirmière</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. Tanya (Esthéticienne) -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                J'ai appris à voir ma coiffure et mon image avec un regard neuf. Ce coaching m'a fait du bien. Une vraie belle expérience. Coach pétillante, bienveillante.
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg">T</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Tanya</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Esthéticienne</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6. Paule (Full) -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                Ce travail sur mon image m'a permis de trouver les couleurs qui me correspondent. Stéphanie m'a vraiment donné des clés dont j'avais besoin. Embarquez pour un voyage haut en couleurs, vos couleurs 💙💚💛❤️
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg">P</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Paule</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Coach de vie</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 7. Audrey -->
-                <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
-                    <div class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5">
-                        <div class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8">"</div>
-                        <div class="space-y-6 relative z-10 pt-4">
-                            <p class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic">
-                                Le changement continue pour moi. Je prends plaisir à faire les boutiques, je m'assume complètement avec mes cheveux frisés. Grand changement même au niveau pro !
-                            </p>
-                            <div class="flex items-center gap-4 pt-4 border-t border-brand-gray/5">
-                                <div class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg">A</div>
-                                <div>
-                                    <p class="font-medium text-brand-gray">Audrey</p>
-                                    <p class="text-base text-brand-gray/50 font-light">Responsable Logistique</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+          <!-- Navigation Buttons -->
+          <div class="flex justify-center gap-4 pt-4">
+            <button
+              id="testimonials-prev"
+              class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/50 hover:bg-brand-cyan hover:text-white hover:border-transparent transition-all group"
+              aria-label="Témoignage précédent"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 group-hover:-translate-x-0.5 transition-transform"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              id="testimonials-next"
+              class="w-12 h-12 rounded-full border border-brand-gray/10 flex items-center justify-center text-brand-gray/50 hover:bg-brand-cyan hover:text-white hover:border-transparent transition-all group"
+              aria-label="Témoignage suivant"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 group-hover:translate-x-0.5 transition-transform"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <!-- Testimonials Carousel -->
+        <!-- Desktop: shows 2 cards (w-[calc(50%-12px)]) | Mobile: shows 1 card (w-[85vw]) -->
+        <div
+          id="testimonials-carousel"
+          class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-4 no-scrollbar -mx-4 md:mx-0"
+        >
+          <!-- 1. Mouna -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Stéphanie propose des accompagnements en or ✨, Écoute,
+                  Personnalisation, Précision et Grande Générosité ! Merci
+                  Stéphanie pour ce que tu m'as apporté sur le chemin du
+                  Rayonnement 🙏💓🦚🦋🌈
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg"
+                  >
+                    M
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Mouna</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Professeur de yoga, danse, universitaire
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Tanya (Institut) -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  J'ai suivi l'atelier coiffure avec Stéphanie, je porte
+                  désormais un regard différent sur mes cheveux, avec plus de
+                  confiance et de compréhension. J'ai beaucoup apprécié nos
+                  échanges, sa belle énergie, sa bienveillance. Un moment
+                  agréable et utile.
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg"
+                  >
+                    T
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Tanya</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Responsable Institut de Beauté
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Paule -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Avant ma rencontre avec Stéphanie, j'étais perdue pour faire
+                  du shopping, je m'habillais sans vraiment me regarder. Le
+                  coaching en image pour découvrir mes couleurs m'a permis de
+                  prendre du temps pour moi, de me regarder... J'ai aujourd'hui
+                  une nouvelle vision sur les couleurs et les vêtements.
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Paule</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Coach de vie
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Florence -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Merci Stéphanie, suite à l'atelier Morpho-Coiffure, j'ai une
+                  nouvelle coiffure, je me sens belle grâce à toi.
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg"
+                  >
+                    F
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Florence</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Infirmière
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Tanya (Esthéticienne) -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  J'ai appris à voir ma coiffure et mon image avec un regard
+                  neuf. Ce coaching m'a fait du bien. Une vraie belle
+                  expérience. Coach pétillante, bienveillante.
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg"
+                  >
+                    T
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Tanya</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Esthéticienne
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Paule (Full) -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Ce travail sur mon image m'a permis de trouver les couleurs
+                  qui me correspondent. Stéphanie m'a vraiment donné des clés
+                  dont j'avais besoin. Embarquez pour un voyage haut en
+                  couleurs, vos couleurs 💙💚💛❤️
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-cyan/10 flex items-center justify-center text-brand-cyan font-medium text-lg"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Paule</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Coach de vie
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Audrey -->
+          <div class="shrink-0 w-[85vw] md:w-[calc(50%-12px)] snap-center">
+            <div
+              class="h-full bg-brand-bg-light p-8 md:p-12 rounded-[2.5rem] border border-brand-gray/5 hover:border-brand-coral/20 transition-all group flex flex-col justify-between relative shadow-lg hover:shadow-xl shadow-brand-gray/5"
+            >
+              <div
+                class="text-6xl text-brand-coral/20 font-serif absolute top-6 left-8"
+              >
+                "
+              </div>
+              <div class="space-y-6 relative z-10 pt-4">
+                <p
+                  class="text-lg lg:text-xl font-light text-brand-gray/80 leading-relaxed italic"
+                >
+                  Le changement continue pour moi. Je prends plaisir à faire les
+                  boutiques, je m'assume complètement avec mes cheveux frisés.
+                  Grand changement même au niveau pro !
+                </p>
+                <div
+                  class="flex items-center gap-4 pt-4 border-t border-brand-gray/5"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-brand-coral font-medium text-lg"
+                  >
+                    A
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-gray">Audrey</p>
+                    <p class="text-base text-brand-gray/50 font-light">
+                      Responsable Logistique
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section 6: Bénéfices -->
     <section id="benefices" class="py-20 lg:py-32 bg-brand-cyan/5">
-        <div class="container mx-auto px-4 max-w-5xl space-y-12 lg:space-y-20">
-            <div class="text-center space-y-6">
-                <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan">Bénéfices du conseil en image</h2>
-                <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Ce que cet accompagnement <br>va changer pour vous</p>
-                <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto">Grâce à une approche sur-mesure, je vous aide à&nbsp;:</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Benefit Items -->
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">🎨</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Valoriser votre image avec <span class="text-brand-cyan font-medium">authenticité</span>.</p>
-                </div>
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">💖</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Booster votre confiance et l'amour de <span class="text-brand-coral font-medium">vous-même</span>.</p>
-                </div>
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">🧠</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Une <span class="text-brand-cyan font-medium">meilleure connaissance</span> de qui vous êtes.</p>
-                </div>
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">⚡</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Renforcer votre <span class="text-brand-coral font-medium">présence</span> et votre impact.</p>
-                </div>
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">🧘</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Créer une <span class="text-brand-cyan font-medium">harmonie</span> visuelle et intérieure.</p>
-                </div>
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full">
-                    <span class="text-3xl block mb-4">🛍️</span>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light">Faire des <span class="text-brand-coral font-medium">choix conscients</span> dans vos achats beauté.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4 max-w-5xl space-y-12 lg:space-y-20">
+        <div class="text-center space-y-6">
+          <h2
+            class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-cyan"
+          >
+            Bénéfices du conseil en image
+          </h2>
+          <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+            Ce que cet accompagnement <br />va changer pour vous
+          </p>
+          <p
+            class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto"
+          >
+            Grâce à une approche sur-mesure, je vous aide à&nbsp;:
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Benefit Items -->
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">🎨</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Valoriser votre image avec
+              <span class="text-brand-cyan font-medium">authenticité</span>.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">💖</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Booster votre confiance et l'amour de
+              <span class="text-brand-coral font-medium">vous-même</span>.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">🧠</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Une
+              <span class="text-brand-cyan font-medium"
+                >meilleure connaissance</span
+              >
+              de qui vous êtes.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">⚡</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Renforcer votre
+              <span class="text-brand-coral font-medium">présence</span> et
+              votre impact.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">🧘</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Créer une
+              <span class="text-brand-cyan font-medium">harmonie</span> visuelle
+              et intérieure.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-brand-gray/5 border border-brand-gray/5 hover:-translate-y-1 transition-transform h-full"
+          >
+            <span class="text-3xl block mb-4">🛍️</span>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light"
+            >
+              Faire des
+              <span class="text-brand-coral font-medium">choix conscients</span>
+              dans vos achats beauté.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section 7: Lieu -->
     <section id="lieu" class="py-20 lg:py-32 bg-brand-white text-center">
-        <div class="container mx-auto px-4 max-w-4xl space-y-16">
-            <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">Où trouver votre coach en image ?</h2>
-            
-            <div class="flex flex-col md:flex-row gap-8">
-                <div class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-cyan/5 group hover:bg-white hover:shadow-2xl transition-all duration-500">
-                    <div class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block">🎥</div>
-                    <h3 class="text-lg lg:text-xl  font-medium uppercase tracking-wider mb-4 text-brand-cyan">Chez soi, en visio</h3>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl reveal font-light">Un accompagnement flexible, <br>partout dans le monde.</p>
-                </div>
-                <div class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-coral/5 group hover:bg-white hover:shadow-2xl transition-all duration-500">
-                    <div class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block">📍</div>
-                    <h3 class="text-lg lg:text-xl  font-medium uppercase tracking-wider mb-4 text-brand-coral">En présentiel</h3>
-                    <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl reveal font-light">Paris & Île-de-France <br>(Frais de déplacement à prévoir).</p>
-                </div>
+      <div class="container mx-auto px-4 max-w-4xl space-y-16">
+        <h2 class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+          Où trouver votre coach en image ?
+        </h2>
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <div
+            class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-cyan/5 group hover:bg-white hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+            >
+              🎥
             </div>
+            <h3
+              class="text-lg lg:text-xl font-medium uppercase tracking-wider mb-4 text-brand-cyan"
+            >
+              Chez soi, en visio
+            </h3>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl reveal font-light"
+            >
+              Un accompagnement flexible, <br />partout dans le monde.
+            </p>
+          </div>
+          <div
+            class="flex-1 bg-brand-bg-light p-10 rounded-[3rem] border border-brand-coral/5 group hover:bg-white hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+            >
+              📍
+            </div>
+            <h3
+              class="text-lg lg:text-xl font-medium uppercase tracking-wider mb-4 text-brand-coral"
+            >
+              En présentiel
+            </h3>
+            <p
+              class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl reveal font-light"
+            >
+              Paris & Île-de-France.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer / CTA -->
-    <footer id="contact" class="bg-brand-bg-light py-20 lg:py-32 border-t border-brand-coral/10">
-        <div class="container mx-auto px-4 md:px-8 max-w-7xl text-center space-y-16">
-            <div class="space-y-8">
-                <div class="space-y-4">
-                    <h2 class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral">Me contacter</h2>
-                    <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">Prête à révéler votre potentiel ?</p>
-                    <p class="text-xl lg:text-2xl text-brand-coral font-light italic">C'est le moment de vous choisir 💖</p>
-                </div>
-                
-                <p class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto">
-                    Ne laissez plus votre image au hasard. Échangeons ensemble de vos besoins, attentes, objectifs lors d'un moment privilégié.
-                </p>
+    <footer
+      id="contact"
+      class="bg-brand-bg-light py-20 lg:py-32 border-t border-brand-coral/10"
+    >
+      <div
+        class="container mx-auto px-4 md:px-8 max-w-7xl text-center space-y-16"
+      >
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <h2
+              class="text-lg lg:text-xl font-medium tracking-wide uppercase text-brand-coral"
+            >
+              Me contacter
+            </h2>
+            <p class="text-3xl md:text-5xl font-medium tracking-tight reveal">
+              Prête à révéler votre potentiel ?
+            </p>
+            <p class="text-xl lg:text-2xl text-brand-coral font-light italic">
+              C'est le moment de vous choisir 💖
+            </p>
+          </div>
 
-                <div class="pt-8">
-                    <a href="#" class="inline-flex flex-col gap-2 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-7 px-10 rounded-[2.5rem] transition-all hover:scale-105 shadow-2xl shadow-brand-cyan/20 group">
-                        <span class="text-lg lg:text-xl">Réservez votre appel découverte offert</span>
-                        <span class="text-sm uppercase tracking-wider text-white/70 group-hover:text-white transition-colors">Prendre Rendez-Vous (45 min)</span>
-                    </a>
-                </div>
-            </div>
+          <p
+            class="text-lg lg:text-xl leading-relaxed text-lg lg:text-xl font-light max-w-2xl mx-auto"
+          >
+            Ne laissez plus votre image au hasard. Échangeons ensemble de vos
+            besoins, attentes, objectifs lors d'un moment privilégié.
+          </p>
 
-            <div class="pt-24 border-t border-brand-gray/5 flex flex-col md:flex-row justify-between items-center gap-10 text-brand-gray/30">
-                <div class="text-left space-y-1">
-                    <p class="font-medium text-brand-gray/50">Stéphanie CAMUS</p>
-                    <p class="text-sm font-light">Tous droits réservés.</p>
-                </div>
-                
-                <div class="flex gap-10 text-sm font-medium uppercase tracking-wider">
-                    <a href="#" id="legal-link" class="hover:text-brand-cyan transition-colors">Mentions Légales</a>
-                </div>
-                
-                <div class="flex gap-4">
-                    <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#0077B5] flex items-center justify-center text-white hover:-translate-y-1 transition-transform shadow-md shadow-blue-500/20" aria-label="LinkedIn">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FFDC80] via-[#FD1D1D] to-[#E1306C] flex items-center justify-center text-white hover:-translate-y-1 transition-transform shadow-md shadow-pink-500/20" aria-label="Instagram">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                </div>
-            </div>
+          <div class="pt-8">
+            <a
+              href="#"
+              class="inline-flex flex-col gap-2 bg-brand-cyan hover:bg-brand-cyan/90 text-white font-medium py-7 px-10 rounded-[2.5rem] transition-all hover:scale-105 shadow-2xl shadow-brand-cyan/20 group"
+            >
+              <span class="text-lg lg:text-xl"
+                >Réservez votre appel découverte offert</span
+              >
+              <span
+                class="text-sm uppercase tracking-wider text-white/70 group-hover:text-white transition-colors"
+                >Prendre Rendez-Vous (45 min)</span
+              >
+            </a>
+          </div>
         </div>
+
+        <div
+          class="pt-24 border-t border-brand-gray/5 flex flex-col md:flex-row justify-between items-center gap-10 text-brand-gray/30"
+        >
+          <div class="text-left space-y-1">
+            <p class="font-medium text-brand-gray/50">Stéphanie CAMUS</p>
+            <p class="text-sm font-light">Tous droits réservés.</p>
+          </div>
+
+          <div class="flex gap-10 text-sm font-medium uppercase tracking-wider">
+            <a
+              href="#"
+              id="legal-link"
+              class="hover:text-brand-cyan transition-colors"
+              >Mentions Légales</a
+            >
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 rounded-full bg-[#0077B5] flex items-center justify-center text-white hover:-translate-y-1 transition-transform shadow-md shadow-blue-500/20"
+              aria-label="LinkedIn"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/stc_coach/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FFDC80] via-[#FD1D1D] to-[#E1306C] flex items-center justify-center text-white hover:-translate-y-1 transition-transform shadow-md shadow-pink-500/20"
+              aria-label="Instagram"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Legal Mentions Modal -->
-    <div id="legal-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-brand-gray/60 backdrop-blur-sm transition-opacity opacity-0" id="legal-modal-backdrop"></div>
-        
-        <!-- Modal Panel -->
-        <div class="relative z-10 w-full h-full flex items-center justify-center p-4">
-             <div class="bg-white rounded-[2.5rem] shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col transform transition-all scale-95 opacity-0" id="legal-modal-panel">
-                
-                <!-- Header -->
-                <div class="flex items-center justify-between p-8 border-b border-brand-gray/5 bg-brand-bg-light">
-                    <h2 class="text-2xl font-medium text-brand-gray" id="modal-title">Mentions Légales</h2>
-                    <button id="close-legal-modal" class="text-brand-gray/50 hover:text-brand-coral transition-colors p-2 rounded-full hover:bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
+    <div
+      id="legal-modal"
+      class="fixed inset-0 z-[100] hidden"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Backdrop -->
+      <div
+        class="absolute inset-0 bg-brand-gray/60 backdrop-blur-sm transition-opacity opacity-0"
+        id="legal-modal-backdrop"
+      ></div>
 
-                <!-- Content -->
-                <div class="p-8 md:p-12 overflow-y-auto space-y-10 text-brand-gray/80 font-light leading-relaxed">
-                    
-                    <!-- 1. Éditeur -->
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-medium text-brand-cyan">1. Édition du site</h3>
-                        <p>
-                            En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <strong>https://www.stephanie-camus.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi&nbsp;:
-                        </p>
-                        <ul class="list-disc pl-5 space-y-2">
-                            <li><strong>Propriétaire du site&nbsp;:</strong> Stéphanie Camus - Contact&nbsp;: [Adresse Email] - Tel&nbsp;: [Numéro de Téléphone] - Adresse&nbsp;: [Adresse Postale].</li>
-                            <li><strong>Identification de l'entreprise&nbsp;:</strong> Stéphanie Camus (Entrepreneur Individuel) - SIREN&nbsp;: [Numéro SIREN] - RCS ou RM&nbsp;: [Ville d'immatriculation] - Adresse postale&nbsp;: [Adresse Postale].</li>
-                            <li><strong>Directeur de la publication&nbsp;:</strong> Stéphanie Camus.</li>
-                        </ul>
-                    </div>
+      <!-- Modal Panel -->
+      <div
+        class="relative z-10 w-full h-full flex items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-[2.5rem] shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col transform transition-all scale-95 opacity-0"
+          id="legal-modal-panel"
+        >
+          <!-- Header -->
+          <div
+            class="flex items-center justify-between p-8 border-b border-brand-gray/5 bg-brand-bg-light"
+          >
+            <h2 class="text-2xl font-medium text-brand-gray" id="modal-title">
+              Mentions Légales
+            </h2>
+            <button
+              id="close-legal-modal"
+              class="text-brand-gray/50 hover:text-brand-coral transition-colors p-2 rounded-full hover:bg-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
 
-                    <!-- 2. Hébergement -->
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-medium text-brand-coral">2. Hébergement</h3>
-                        <p>
-                            Le site est hébergé par&nbsp;: <strong>[Nom de l'hébergeur]</strong><br>
-                            Adresse&nbsp;: [Adresse de l'hébergeur]<br>
-                            Téléphone&nbsp;: [Téléphone de l'hébergeur]
-                        </p>
-                    </div>
+          <!-- Content -->
+          <div
+            class="p-8 md:p-12 overflow-y-auto space-y-10 text-brand-gray/80 font-light leading-relaxed"
+          >
+            <!-- 1. Éditeur -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-medium text-brand-cyan">
+                1. Édition du site
+              </h3>
+              <p>
+                En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004
+                pour la confiance dans l'économie numérique, il est précisé aux
+                utilisateurs du site internet
+                <strong>https://stephanie-camus.fr</strong> l'identité des
+                différents intervenants dans le cadre de sa réalisation et de
+                son suivi&nbsp;:
+              </p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>
+                  <strong>Propriétaire du site&nbsp;:</strong> Stéphanie Camus -
+                  Contact&nbsp;: [Adresse Email] - Tel&nbsp;: [Numéro de
+                  Téléphone] - Adresse&nbsp;: [Adresse Postale].
+                </li>
+                <li>
+                  <strong>Identification de l'entreprise&nbsp;:</strong>
+                  Stéphanie Camus (Entrepreneur Individuel) - SIREN&nbsp;:
+                  [Numéro SIREN] - RCS ou RM&nbsp;: [Ville d'immatriculation] -
+                  Adresse postale&nbsp;: [Adresse Postale].
+                </li>
+                <li>
+                  <strong>Directeur de la publication&nbsp;:</strong> Stéphanie
+                  Camus.
+                </li>
+              </ul>
+            </div>
 
-                    <!-- 3. Propriété intellectuelle -->
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-medium text-brand-cyan">3. Propriété intellectuelle et contrefaçons</h3>
-                        <p>
-                            <strong>Stéphanie Camus</strong> est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons.
-                        </p>
-                        <p>
-                            Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de <strong>Stéphanie Camus</strong>.
-                        </p>
-                        <p>
-                            Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
-                        </p>
-                    </div>
+            <!-- 2. Hébergement -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-medium text-brand-coral">
+                2. Hébergement
+              </h3>
+              <p>
+                Le site est hébergé par&nbsp;:
+                <strong>[Nom de l'hébergeur]</strong><br />
+                Adresse&nbsp;: [Adresse de l'hébergeur]<br />
+                Téléphone&nbsp;: [Téléphone de l'hébergeur]
+              </p>
+            </div>
 
-                    <!-- 4. Données personnelles -->
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-medium text-brand-coral">4. Limitations de responsabilité</h3>
-                        <p>
-                            <strong>Stéphanie Camus</strong> ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site.
-                        </p>
-                        <p>
-                            <strong>Stéphanie Camus</strong> décline toute responsabilité quant à l'utilisation qui pourrait être faite des informations et contenus présents sur le site.
-                        </p>
-                        <p>
-                            <strong>Stéphanie Camus</strong> s'engage à sécuriser au mieux le site, cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur son site à son insu.
-                        </p>
-                    </div>
+            <!-- 3. Propriété intellectuelle -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-medium text-brand-cyan">
+                3. Propriété intellectuelle et contrefaçons
+              </h3>
+              <p>
+                <strong>Stéphanie Camus</strong> est propriétaire des droits de
+                propriété intellectuelle et détient les droits d'usage sur tous
+                les éléments accessibles sur le site internet, notamment les
+                textes, images, graphismes, logos, vidéos, architecture, icônes
+                et sons.
+              </p>
+              <p>
+                Toute reproduction, représentation, modification, publication,
+                adaptation de tout ou partie des éléments du site, quel que soit
+                le moyen ou le procédé utilisé, est interdite, sauf autorisation
+                écrite préalable de <strong>Stéphanie Camus</strong>.
+              </p>
+              <p>
+                Toute exploitation non autorisée du site ou de l'un quelconque
+                des éléments qu'il contient sera considérée comme constitutive
+                d'une contrefaçon et poursuivie conformément aux dispositions
+                des articles L.335-2 et suivants du Code de Propriété
+                Intellectuelle.
+              </p>
+            </div>
 
-                    <!-- 5. CNIL et gestion des données personnelles -->
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-medium text-brand-cyan">5. CNIL et gestion des données personnelles</h3>
-                        <p>
-                            Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l'utilisateur du site <strong>https://www.stephanie-camus.fr</strong> dispose d'un droit d'accès, de modification et de suppression des informations collectées.
-                        </p>
-                        <p>
-                            Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données&nbsp;: <strong>Stéphanie Camus</strong> - [Adresse Email].
-                        </p>
-                    </div>
+            <!-- 4. Données personnelles -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-medium text-brand-coral">
+                4. Limitations de responsabilité
+              </h3>
+              <p>
+                <strong>Stéphanie Camus</strong> ne pourra être tenu pour
+                responsable des dommages directs et indirects causés au matériel
+                de l'utilisateur, lors de l'accès au site.
+              </p>
+              <p>
+                <strong>Stéphanie Camus</strong> décline toute responsabilité
+                quant à l'utilisation qui pourrait être faite des informations
+                et contenus présents sur le site.
+              </p>
+              <p>
+                <strong>Stéphanie Camus</strong> s'engage à sécuriser au mieux
+                le site, cependant sa responsabilité ne pourra être mise en
+                cause si des données indésirables sont importées et installées
+                sur son site à son insu.
+              </p>
+            </div>
 
-                </div>
-             </div>
+            <!-- 5. CNIL et gestion des données personnelles -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-medium text-brand-cyan">
+                5. CNIL et gestion des données personnelles
+              </h3>
+              <p>
+                Conformément aux dispositions de la loi 78-17 du 6 janvier 1978
+                modifiée, l'utilisateur du site
+                <strong>https://stephanie-camus.fr</strong> dispose d'un droit
+                d'accès, de modification et de suppression des informations
+                collectées.
+              </p>
+              <p>
+                Pour exercer ce droit, envoyez un message à notre Délégué à la
+                Protection des Données&nbsp;: <strong>Stéphanie Camus</strong> -
+                [Adresse Email].
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Mobile Menu Overlay - Redesigned for Robustness -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[120] translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden">
-        <!-- Brand Name (Fixed at top-left) -->
-        <a href="#" class="mobile-nav-link absolute top-7 left-6 text-xl font-medium tracking-tighter text-brand-gray z-20">
-            Stéphanie <span class="text-brand-cyan">CAMUS</span>
-        </a>
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-white z-[120] translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden"
+    >
+      <!-- Brand Name (Fixed at top-left) -->
+      <a
+        href="#"
+        class="mobile-nav-link absolute top-7 left-6 text-xl font-medium tracking-tighter text-brand-gray z-20"
+      >
+        Stéphanie <span class="text-brand-cyan">CAMUS</span>
+      </a>
 
-        <!-- Close Button (Fixed at top-right, always visible) -->
-        <button id="close-menu-button" class="absolute top-5 right-5 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-        
-        <!-- Scrollable Container (Independent of Close Button) -->
-        <div class="h-full overflow-y-auto overscroll-contain">
-            <div class="min-h-full flex flex-col items-center justify-center py-24 px-6 space-y-10">
-                <!-- Navigation Links -->
-                <div class="flex flex-col items-center gap-6">
-                    <a href="#services" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Services</a>
-                    <a href="#bio" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Parcours</a>
-                    <a href="#temoignages" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Témoignages</a>
-                    <a href="#benefices" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Bénéfices</a>
-                    <a href="#lieu" class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2">Lieu</a>
-                </div>
-                
-                <!-- Contact Action -->
-                <a href="#contact" class="mobile-nav-link bg-brand-cyan text-white px-10 py-4 rounded-full text-base font-bold uppercase tracking-widest shadow-xl shadow-brand-cyan/20 transform active:scale-95 transition-all">
-                    Contact
-                </a>
-                
-                <!-- Social Icons -->
-                <div class="flex gap-8 pt-4">
-                    <a href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-[#0077B5] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-blue-500/30" aria-label="LinkedIn">
-                        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/stc_coach/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-gradient-to-tr from-[#FFDC80] via-[#FD1D1D] to-[#E1306C] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" aria-label="Instagram">
-                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                </div>
-            </div>
+      <!-- Close Button (Fixed at top-right, always visible) -->
+      <button
+        id="close-menu-button"
+        class="absolute top-5 right-5 p-2 text-brand-gray/60 hover:text-brand-coral transition-colors z-20 bg-white/50 backdrop-blur-sm rounded-full"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <!-- Scrollable Container (Independent of Close Button) -->
+      <div class="h-full overflow-y-auto overscroll-contain">
+        <div
+          class="min-h-full flex flex-col items-center justify-center py-24 px-6 space-y-10"
+        >
+          <!-- Navigation Links -->
+          <div class="flex flex-col items-center gap-6">
+            <a
+              href="#services"
+              class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2"
+              >Services</a
+            >
+            <a
+              href="#bio"
+              class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2"
+              >Parcours</a
+            >
+            <a
+              href="#temoignages"
+              class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2"
+              >Témoignages</a
+            >
+            <a
+              href="#benefices"
+              class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2"
+              >Bénéfices</a
+            >
+            <a
+              href="#lieu"
+              class="mobile-nav-link text-lg font-medium uppercase tracking-[0.2em] text-brand-gray hover:text-brand-cyan transition-colors py-2"
+              >Lieu</a
+            >
+          </div>
+
+          <!-- Contact Action -->
+          <a
+            href="#contact"
+            class="mobile-nav-link bg-brand-cyan text-white px-10 py-4 rounded-full text-base font-bold uppercase tracking-widest shadow-xl shadow-brand-cyan/20 transform active:scale-95 transition-all"
+          >
+            Contact
+          </a>
+
+          <!-- Social Icons -->
+          <div class="flex gap-8 pt-4">
+            <a
+              href="https://www.linkedin.com/in/st%C3%A9phanie-camus-103880200/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-14 h-14 rounded-full bg-[#0077B5] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-blue-500/30"
+              aria-label="LinkedIn"
+            >
+              <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/stc_coach/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-14 h-14 rounded-full bg-gradient-to-tr from-[#FFDC80] via-[#FD1D1D] to-[#E1306C] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-pink-500/30"
+              aria-label="Instagram"
+            >
+              <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <script type="module" src="./src/main.js"></script>
-</body>
+  </body>
 </html>
